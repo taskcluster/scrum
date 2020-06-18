@@ -1,2 +1,7 @@
-# scrum
-A separate repo where work tracking items can live
+# Taskcluster Agile Process Tracking
+
+## Definitions
+
+## Tools
+
+## Sprints
