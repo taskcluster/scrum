@@ -2,13 +2,13 @@
 
 ## What worked
 * Having a dedicated product owner
-  * provided extra guidance on scope and helped us narrow the critical path when that became necessaary
-* encrypted column support
+  * provided extra guidance on scope and helped us narrow the critical path when that became necessary
+* Encrypted column support
   * this would have been a blocker for a future postgres phase 2 sprint, but we got it done in the context of this sprint
-* aligning on issues in github as the sole source of truth made it easier to track progress and find the next thing to work on
+* Aligning on issues in github as the sole source of truth made it easier to track progress and find the next thing to work on
   * Kudos to @imbstack for putting in the effort to flesh out all the issues as much as he did and highlighting the dependencies as best he could in github.
 * Estimate tracking
-  * Our label-based method was a good start herei.
+  * Our label-based method was a good start.
 
 ## What didn't
 * Stories vs Epics vs Issues
@@ -21,6 +21,7 @@
   * We are starving requests from other teams while in a particular sprint, so we'd better deliver what we intend.
   * Do we need recurring or interstitial sprints to deal with requests and backlog?
     * bustage/requests need to be factored into every sprint
+    * We should plan on scheduling a sprint every 4 cycles or so (i.e once a quarter) to address backlogged requests if not covered by other sprints.
 * Scope and the critical path
   * Our initial sprint goals were too broad and lacked a well-defined user story that we could use to measure delivery
     * In fact, it would have been impossible to determine the critical path with the initial goals
@@ -49,7 +50,7 @@
     * dependency tracking
     * estimate tracking with burndown charts
     * milestones that can be scheduled to assist with planning future sprints
-  * We will adopt the terminology of Zenhub re: milestnoes and epics to minimize confusion.
+  * We will adopt the terminology of Zenhub re: milestones and epics to minimize confusion.
     * We will document this and other process decisions in the scrum repo.
 * Critical path analysis
   * Prior to the kickoff of the next sprint, the product owner and the scrum master will meet to determine what *must* get done.
