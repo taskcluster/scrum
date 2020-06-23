@@ -1,4 +1,4 @@
-# Sprint retrospective - Support worker re-registration
+# Sprint retrospective - Support worker re-registration, May 26 - June 12, 2020
 
 ## What worked
 * Having a dedicated product owner
