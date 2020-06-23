@@ -15,7 +15,7 @@
 * Stories vs Epics vs Issues
   * Lack of clarity around terminology and how things break down from one level to the next
   * Very clear technical tasks are the basis for good estimates == Issues
-  * User stories should be the basis for "did we finish the thing" or not
+  * User stories should be the basis for "did we finish the thing?" or not
   * Unsure yet how to indicate this effectively in current tooling
 * Delivering what we promise
   * aka Following through on what we decide goes into each sprint
