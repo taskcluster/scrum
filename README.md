@@ -29,7 +29,7 @@ An _epic_ a large user story that describes plainly a feature of the Taskcluster
 ### Issue
 An _issue_ is a single, cohesive task as represented by a Github issue. Larger issues should be decomposed into smaller issues. No single issue should taken more than 1 engineer week to accomplish, modulo time to review and deploy. Issues should address a single theme.
 
-A well-defined developmemt issue is the basis for all of our estimation. It cannot be overstated how important it is to make sure issues are decomposed to the point where they can be estimated accurately. It underpins everything else.
+A well-defined developmemt issue is the basis for all of our estimation. It cannot be overstated how important it is to make sure issues are decomposed to the point where they can be estimated accurately. It underpins _everything_ else.
 
 ## Tools
 All Taskcluster work for sprints is tracked via issues in Github.
