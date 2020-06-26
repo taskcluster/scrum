@@ -18,16 +18,16 @@ For Taskcluster @ Mozilla, we are currently tracking the following themes:
 * Cost Reduction
 
 ### Initiative
-An initiative is a collection of one or more milestones that, taken together, address one or more themes. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
+An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
 
 ### Milestone
-The *milestone* is the goal for a sprint and, as such, should be able to be completed during the sprint duration made up of a small collection of epics. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Milestones can address one or more themes.
+The _milestone_ is the goal for a sprint and, as such, should be able to be completed during the sprint duration made up of a small collection of epics. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Milestones can address one or more themes.
 
 ### Epic
-An *epic* a large user story that describes plainly a feature of the Taskcluster system. Epics can address multiple themes. User stories are an important aspect of agile development, but we've chosen to map them to Epics in our usage to make them trackable at the correct level using [our tooling](#Tools).
+An _epic_ a large user story that describes plainly a feature of the Taskcluster system. Epics can address multiple themes. User stories are an important aspect of agile development, but we've chosen to map them to Epics in our usage to make them trackable at the correct level using [our tooling](#Tools).
 
 ### Issue
-An *issue* is a single, cohesive task as represented by a Github issue. Larger issues should be decomposed into smaller issues. No single issue should taken more than 1 engineer week to accomplish, modulo time to review and deploy. Issues should address a single theme.
+An _issue_ is a single, cohesive task as represented by a Github issue. Larger issues should be decomposed into smaller issues. No single issue should taken more than 1 engineer week to accomplish, modulo time to review and deploy. Issues should address a single theme.
 
 ## Tools
 All Taskcluster work for sprints is tracked via issues in Github.
@@ -62,13 +62,13 @@ If multiple future sprints are ready and there are no other factors to aid decis
 
 ### Workspace configuration
 We have the following pipelines (columns) configured in Zenhub:
-* *Icebox*: issues we will never work on. These may be valid, but are not a priority given finite time and resources.
-* *New Issues*: newly-filed issues. They will remain here until triaged and labelled to go into either the Product Backlog, Next Sprint, Current Sprint Backlog, In Progress, or Icebox pipeline.
-* *Product Backlog*: triaged issues that are not part of the current sprint or an upcoming sprint.
-* *Next Sprint*: issues that have been labelled and are being groomed for an upcoming sprint. Note: all upcoming sprints (there can be several being planned in parallel) share this pipeline.
-* *Current Sprint Backlog*: issues that are part of the current sprint that are not being worked on yet.
-* *In Progress*: issues that are being worked on.
-* *Done*: White shores, and beyond, a far green country under a swift sunrise.
+* **Icebox**: issues we will never work on. These may be valid, but are not a priority given finite time and resources.
+* **New Issues**: newly-filed issues. They will remain here until triaged and labelled to go into either the Product Backlog, Next Sprint, Current Sprint Backlog, In Progress, or Icebox pipeline.
+* **Product Backlog**: triaged issues that are not part of the current sprint or an upcoming sprint.
+* **Next Sprint**: issues that have been labelled and are being groomed for an upcoming sprint. Note: all upcoming sprints (there can be several being planned in parallel) share this pipeline.
+* **Current Sprint Backlog**: issues that are part of the current sprint that are not being worked on yet.
+* **In Progress**: issues that are being worked on.
+* **Done**: White shores, and beyond, a far green country under a swift sunrise.
 
 ### Starting the sprint
 At the start of the sprint, the _Scrum master_ will update the [primary Zenhub workspace] to mark the current milestone as active and moved the issues associated with that milestone into the Current Sprint Backlog pipeline. We will hold a kick-off meeting where the _Product owner_ will provide context enough for people to get started and assist developers in choosing their first issue to work on. The _Scrum master_ will remind everyone of any process changes being adopted for the new sprint. Work begins.
