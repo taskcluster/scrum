@@ -21,7 +21,7 @@ For Taskcluster @ Mozilla, we are currently tracking the following themes:
 An initiative is a collection of one or more milestones that, taken together, address one or more themes. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
 
 ### Milestone
-The *milestone* is the goal for a sprint, and as such should be able to be completed during the sprint duration made up of a small collection of epics. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Milestones can address one or more themes.
+The *milestone* is the goal for a sprint and, as such, should be able to be completed during the sprint duration made up of a small collection of epics. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Milestones can address one or more themes.
 
 ### Epic
 An *epic* a large user story that describes plainly a feature of the Taskcluster system. Epics can address multiple themes. User stories are an important aspect of agile development, but we've chosen to map them to Epics in our usage to make them trackable at the correct level using [our tooling](#Tools).
@@ -49,7 +49,7 @@ The _Product owner_ manages the product backlog and keeps the rest of the team w
 The _Scrum master_ deals with the scrum process itself. They run the kick-off meetings, the daily stand-ups, and the wrap-up meetings (review & retrospective) for every sprint. They prompt developers for status and follow-up when developers are blocked. They support the Product owner in whatever way the Product owner deems necessary. The _Scrum master_ also works with _Future sprint champions_ to ensure high quality, well-scoped milestones for future sprints.
 
 ### 3. Future sprint champion
-The _Future sprint champion_ is responsible for organizing issues in the Product Backlog into a cohesive milestone that the team can work towards in a future sprint. They are expected to devote a few hours every week triaging issues in the back to refine the scope for the future sprint. Note: there can be multiple _Future sprint champions_ active at one time.
+The _Future sprint champion_ is responsible for organizing issues in the Product Backlog into a cohesive milestone that the team can work towards in a future sprint. They are expected to devote a few hours every week to triaging issues in the backlog to refine the scope for the future sprint. Note: there can be multiple _Future sprint champions_ active at one time.
 
 ## Sprint process
 
@@ -62,13 +62,13 @@ If multiple future sprints are ready and there are no other factors to aid decis
 
 ### Workspace configuration
 We have the following pipelines (columns) configured in Zenhub:
-* Icebox: issues we will never work on. These may be valid, but are not a priority given finite time and resources.
-* New Issues: newly-filed issues. They will remain here until triaged and labelled to go into either the Product Backlog, Next Sprint, Current Sprint Backlog, In Progress, or Icebox pipeline.
-* Product Backlog: triaged issues that are not part of the current sprint or an upcoming sprint.
-* Next Sprint: issues that have been labelled and are being groomed for an upcoming sprint. Note: all upcoming sprints (there can be several being planned in parallel) share this pipeline.
-* Current Sprint Backlog: issues that are part of the current sprint that are not being worked on yet.
-* In Progress: issues that are being worked on.
-* Done: White shores, and beyond, a far green country under a swift sunrise.
+* *Icebox*: issues we will never work on. These may be valid, but are not a priority given finite time and resources.
+* *New Issues*: newly-filed issues. They will remain here until triaged and labelled to go into either the Product Backlog, Next Sprint, Current Sprint Backlog, In Progress, or Icebox pipeline.
+* *Product Backlog*: triaged issues that are not part of the current sprint or an upcoming sprint.
+* *Next Sprint*: issues that have been labelled and are being groomed for an upcoming sprint. Note: all upcoming sprints (there can be several being planned in parallel) share this pipeline.
+* *Current Sprint Backlog*: issues that are part of the current sprint that are not being worked on yet.
+* *In Progress*: issues that are being worked on.
+* *Done*: White shores, and beyond, a far green country under a swift sunrise.
 
 ### Starting the sprint
 At the start of the sprint, the _Scrum master_ will update the [primary Zenhub workspace] to mark the current milestone as active and moved the issues associated with that milestone into the Current Sprint Backlog pipeline. We will hold a kick-off meeting where the _Product owner_ will provide context enough for people to get started and assist developers in choosing their first issue to work on. The _Scrum master_ will remind everyone of any process changes being adopted for the new sprint. Work begins.
@@ -87,7 +87,7 @@ The _Scrum master_ is paying attention to these updates to make sure that blocke
 Once a week, the _Product owner_ and the _Scrum master_ will meet to assess sprint progress. Using the burndown chart, they figure out whether the sprint is still on track and can be completed within the allotted time. If necessary, the critical path can be refined to allow partial delivery of the original objective. Under extraordinary circumstances, they can opt to end the current sprint.
 
 ### Ending the sprint
-As the sprint draws to a close, _Product owner_ and _Scrum master_ will meet to decide what, if anything, from the _Current Sprint Backlog_ still needs to be done. In general, the _Scrum master_ will move everything that hasn't been completed to the Product Backlog. The _Product owner_ will engage with developers who still have work in progress to figure out how and when to deploy that wrap-up that work during the _Time between sprints_.
+As the sprint draws to a close, the _Product owner_ and _Scrum master_ will meet to decide what issues from the _Current Sprint Backlog_ (if anything) still needs to be done. The _Scrum master_ will move all issues that have not been started to the Product Backlog pipeline. The _Product owner_ will engage with developers who still have work in progress to figure out how and when to deploy that wrap-up that work during the _Time between sprints_.
 
 ### Time between sprints
 We allow ourselves *one week* between sprints. This buffer allows us to analyze the previous sprint without the pressure of immediately jumping into something new. Pragmatically speaking, it also gives us the time to finish off sprint items that may still require deployment, address unanticipated fallout from the previous sprint, and deal with the backlog of small, timely requests that may have accumulated during the sprint.
