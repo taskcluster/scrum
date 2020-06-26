@@ -1,5 +1,12 @@
 # Taskcluster Agile Process Tracking
 
+* [Definitions](#definitions)
+* [Tools](#tools)
+* [Roles](#roles)
+* [Sprint process](#sprint-process)
+
+___
+
 ## Definitions
 
 In order to avoid confusion when discussing our process, it's helpful to define the various terms we use to categorize our work at different levels of granularity and how they roll up into each other.
