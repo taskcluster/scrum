@@ -71,7 +71,7 @@ We have the following pipelines (columns) configured in Zenhub:
 * **Done**: White shores, and beyond, a far green country under a swift sunrise.
 
 ### Starting the sprint
-At the start of the sprint, the _Scrum master_ will update the [primary Zenhub workspace] to mark the current milestone as active and moved the issues associated with that milestone into the Current Sprint Backlog pipeline. We will hold a kick-off meeting where the _Product owner_ will provide context enough for people to get started and assist developers in choosing their first issue to work on. The _Scrum master_ will remind everyone of any process changes being adopted for the new sprint. Work begins.
+At the start of the sprint, the _Scrum master_ will update the [primary Zenhub workspace](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/board) to mark the current milestone as active and moved the issues associated with that milestone into the Current Sprint Backlog pipeline. We will hold a kick-off meeting where the _Product owner_ will provide context enough for people to get started and assist developers in choosing their first issue to work on. The _Scrum master_ will remind everyone of any process changes being adopted for the new sprint. Work begins.
 
 ### During the sprint
 The team will hold daily stand-up meetings for the duration of the sprint. Our daily stand-ups take place in Slack at 8am PT (11am ET/5pm CEST), except on Tuesdays when we present our stand-up status as the first agenda item of our weekly team meeting. Whether delivered in person on via Slack, the format of the update is the same:
