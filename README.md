@@ -25,18 +25,18 @@ For Taskcluster @ Mozilla, we are currently tracking the following themes:
 * Cost Reduction
 
 ### Initiative
-An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
+An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Taskcluster team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
 
 ### Milestone
-The _milestone_ is the goal for a sprint and, as such, should be able to be completed during the sprint duration made up of a small collection of epics. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Milestones can address one or more themes.
+The _milestone_ is the goal for a sprint and, as such, should be able to be completed during the sprint duration. A milestone is made up of a small collection of epics. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Milestones can address one or more themes.
 
 ### Epic
-An _epic_ a large user story that describes plainly a feature of the Taskcluster system. Epics can address multiple themes. User stories are an important aspect of agile development, but we've chosen to map them to Epics in our usage to make them trackable at the correct level using [our tooling](#Tools).
+An _epic_ a large user story that describes plainly a feature of the Taskcluster system. Epics can address multiple themes. User stories are an important aspect of agile development, but we've chosen to map them to Epics in our usage to make them trackable at the correct level using [our tooling](#Tools). 
 
 ### Issue
-An _issue_ is a single, cohesive task as represented by a Github issue. Larger issues should be decomposed into smaller issues. No single issue should taken more than 1 engineer week to accomplish, modulo time to review and deploy. Issues should address a single theme.
+An _issue_ is a single, cohesive task as represented by a Github issue. Larger issues should be decomposed into smaller issues. No single issue should take more than 1 engineer week to accomplish, modulo time to review and deploy. Issues should address a single theme.
 
-A well-defined developmemt issue is the basis for all of our estimation. It cannot be overstated how important it is to make sure issues are decomposed to the point where they can be estimated accurately. It underpins _everything_ else.
+A well-defined issue is the basis for all of our estimation. It cannot be overstated how important it is to make sure issues are decomposed to the point where they can be estimated accurately. It underpins _everything_ else.
 
 ## Tools
 All Taskcluster work for sprints is tracked via issues in Github.
@@ -49,10 +49,12 @@ We are using [Zenhub](https://www.zenhub.com/) to manage our agile process. Zenh
 * milestones for tracking sprint objectives
 * burndown charts
 
+Any issues that are purely process-based (e.g. scrum documentaion) should be filed in [the scrum repo](https://github.com/taskcluster/scrum). Epics are represented in Zenhub as [specially-tagged issues](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/board?epics:settings=epicsOnly&repos=269405817). Since they are a process abstraction to link issues together, Epic issues should be filed in the scrum repo as well.
+
 ## Roles
 We have three defined roles in our agile process:
 ### 1. Product owner
-The _Product owner_ manages the product backlog and keeps the rest of the team working on the most important thing. They have the final decision on matters of scope. They can also change the scope of the current milestone or, at their discretion,  end the sprint early.
+The _Product owner_ manages the product backlog and keeps the rest of the team working on the most important thing. They have the final decision on matters of scope. They can also change the scope of the current milestone or, at their discretion, end the sprint early.
 
 ### 2. Scrum master
 The _Scrum master_ deals with the scrum process itself. They run the kick-off meetings, the daily stand-ups, and the wrap-up meetings (review & retrospective) for every sprint. They prompt developers for status and follow-up when developers are blocked. They support the Product owner in whatever way the Product owner deems necessary. The _Scrum master_ also works with _Future sprint champions_ to ensure high quality, well-scoped milestones for future sprints.
