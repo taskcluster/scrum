@@ -21,8 +21,8 @@ Themes are large focus areas than span the Mozilla organization and are pertinen
 For Taskcluster @ Mozilla, we are currently tracking the following themes:
 * Make data actionable
 * Promote external adoption
-* Improve Ease of Use
-* Support Cost Reduction
+* Improve ease of use
+* Support cost reduction
 
 ### Initiative
 An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Taskcluster team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
