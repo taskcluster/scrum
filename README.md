@@ -65,7 +65,7 @@ Here is a top-down categorization example from an actual sprint:
 * Epic: [Create and update tools to facilitate work with new db format](https://github.com/taskcluster/scrum/issues/3)
 * Issue: [Add support for data signing](https://github.com/taskcluster/taskcluster/issues/3082)
 
-Note: the above decomposition from theme to issue is represented in its simplest form, but it could certainly be more complex. For example, the _Initiative_ to "Switch the Taskcluster datastore from Azure to Postgres" might also serve the theme of "Cost reduction" depending on how the new data is used, and would "Promote exteral adoption" as well by simplifying the setup requirements for Taskcluster.
+Note: the above decomposition from theme to issue is represented in its simplest form, but it could certainly be more complex. For example, the _Initiative_ to "Switch the Taskcluster datastore from Azure to Postgres" might also serve the theme of "Cost reduction" depending on how the new data is used, and would "Promote external adoption" as well by simplifying the setup requirements for Taskcluster.
 
 ## Tools
 All Taskcluster work for sprints is tracked via issues in Github.
