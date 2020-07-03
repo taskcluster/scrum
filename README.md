@@ -1,9 +1,31 @@
 # Taskcluster Agile Process Tracking
 
-* [Definitions](#definitions)
-* [Tools](#tools)
-* [Roles](#roles)
-* [Sprint process](#sprint-process)
+This repo contains documentation and issues related to how the Taskcluster team at Mozilla runs its agile development process.
+
+Table of Contents
+=================
+
+   * [Taskcluster Agile Process Tracking](#taskcluster-agile-process-tracking)
+      * [Definitions](#definitions)
+         * [Theme](#theme)
+         * [Initiative](#initiative)
+            * [Current Initiatives](#current-initiatives)
+         * [Milestone](#milestone)
+         * [Epic](#epic)
+         * [Issue](#issue)
+         * [An Example](#an-example)
+      * [Tools](#tools)
+      * [Roles](#roles)
+         * [1. Product owner](#1-product-owner)
+         * [2. Scrum master](#2-scrum-master)
+         * [3. Future sprint champion](#3-future-sprint-champion)
+      * [Sprint process](#sprint-process)
+         * [Choosing the next sprint](#choosing-the-next-sprint)
+         * [Workspace configuration](#workspace-configuration)
+         * [Starting the sprint](#starting-the-sprint)
+         * [During the sprint](#during-the-sprint)
+         * [Ending the sprint](#ending-the-sprint)
+         * [Time between sprints](#time-between-sprints)
 
 ______
 
