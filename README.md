@@ -5,7 +5,7 @@
 * [Roles](#roles)
 * [Sprint process](#sprint-process)
 
-___
+______
 
 ## Definitions
 
@@ -19,24 +19,53 @@ Theme -> Initiative -> Milestone -> Epic -> Issue
 Themes are large focus areas than span the Mozilla organization and are pertinent and addressable by the Taskcluster team.
 
 For Taskcluster @ Mozilla, we are currently tracking the following themes:
-* Making Data Actionable
-* Ease of use
+* Make data actionable
 * Promote external adoption
-* Cost Reduction
+* Improve Ease of Use
+* Support Cost Reduction
 
 ### Initiative
 An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Taskcluster team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
+
+#### Current Initiatives
+* [Switch the Taskcluster datastore from Azure to Postgres](https://github.com/orgs/taskcluster/projects/6)
+* [Use worker-runner everywhere](https://bugzilla.mozilla.org/show_bug.cgi?id=1602946)
+* [Streamline service deployment configuration](https://github.com/taskcluster/taskcluster/projects/8)
+* [Implement the Object Service](https://bugzilla.mozilla.org/show_bug.cgi?id=1471582)
+* [Implement projectId](https://bugzilla.mozilla.org/show_bug.cgi?id=1607487)
+* [Implement taskQueueId](https://github.com/taskcluster/taskcluster-rfcs/pull/145)
+* [Implement the Github Checks API](https://bugzilla.mozilla.org/show_bug.cgi?id=1459645)
+* [Use SOPS instead of password-store](https://bugzilla.mozilla.org/show_bug.cgi?id=1483320)
+* [Artifact Integrity](https://docs.google.com/document/d/14miyPpGnpiyvFb93-doV7ENcKjwSdZYUV1VplPEcRqU/edit#heading=h.jgvxmoleismy)
+* [Structured Logging for Workers](https://bugzilla.mozilla.org/show_bug.cgi?id=1529660)
+* [More secure, well-documented process for interactive tasks](https://github.com/taskcluster/taskcluster-rfcs/issues/41)
+* Automatically land config changes to community-tc
+* Move frequently-updated complex configuration out of the deployment config and into the API
+* Help users construct taskcluster.yml
+* Better worker capacity estimates
 
 ### Milestone
 The _milestone_ is the goal for a sprint and, as such, should be able to be completed during the sprint duration. A milestone is made up of a small collection of epics. This can be a thin wrapper around a single epic if the user story is large and/or important enough. Milestones can address one or more themes.
 
 ### Epic
-An _epic_ a large user story that describes plainly a feature of the Taskcluster system. Epics can address multiple themes. User stories are an important aspect of agile development, but we've chosen to map them to Epics in our usage to make them trackable at the correct level using [our tooling](#Tools). 
+An _epic_ a large user story that describes plainly a feature of the Taskcluster system. Epics can address multiple themes. User stories are an important aspect of agile development, but we've chosen to map them to Epics in our usage to make them trackable at the correct level using [our tooling](#Tools).
 
 ### Issue
-An _issue_ is a single, cohesive task as represented by a Github issue. Larger issues should be decomposed into smaller issues. No single issue should take more than 1 engineer week to accomplish, modulo time to review and deploy. Issues should address a single theme.
+An _issue_ is a single, cohesive task as represented by a Github issue. Larger issues should be decomposed into smaller issues. No single issue should take more than 1 engineer week to accomplish, modulo time to review and deploy. Issues should address a single epic.
 
 A well-defined issue is the basis for all of our estimation. It cannot be overstated how important it is to make sure issues are decomposed to the point where they can be estimated accurately. It underpins _everything_ else.
+
+### An Example
+
+Here is a top-down categorization example from an actual sprint:
+
+* Theme: Make data actionable
+* Initiative: Switch the Taskcluster datastore from Azure to Postgres
+* Milestone: Migrate database tables from tc-lib-entities format to proper relational tables (aka postgres phase 2)
+* Epic: [Create and update tools to facilitate work with new db format](https://github.com/taskcluster/scrum/issues/3)
+* Issue: [Add support for data signing](https://github.com/taskcluster/taskcluster/issues/3082)
+
+Note: the above decomposition from theme to issue is represented in its simplest form, but it could certainly be more complex. For example, the _Initiative_ to "Switch the Taskcluster datastore from Azure to Postgres" might also serve the theme of "Cost reduction" depending on how the new data is used, and would "Promote exteral adoption" as well by simplifying the setup requirements for Taskcluster.
 
 ## Tools
 All Taskcluster work for sprints is tracked via issues in Github.
