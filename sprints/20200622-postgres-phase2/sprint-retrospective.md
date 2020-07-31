@@ -32,14 +32,14 @@
     * We were able to schedule the TCW a week later than it would have normally taken place.
     * Because systems are generally better automated and more resilient than a few years ago. RelMan can be more flexible with timing, provided we engage them early and we have a solid rollback story.
 * Zenhub
-  * The Zenhub tooling around issues proved better (more full-featured) than github version
+  * The Zenhub tooling around issues proved better (more full-featured) than the github version.
   * The blocking/blocker labelling was useful
     * e.g. When we decided to cut signing, we immediately knew how many other issues would be effective and could also be cut.
 * We managed to maintain a balance between external requests and sprint focus.
 
 ## What didn't
 * Zenhub
-  * Despite generally being a welcome addition to the sprint process, we ran into some issues with Zenhub that weren't great.
+  * Despite generally being a welcome addition to the sprint process, we ran into some issues with Zenhub that weren't great:
     * Occasional blank pages, sometimes associated with switching tabs.
     * Labels that we added to issues sometimes went missing, i.e. our changes didn’t stick and we needed to redo some work.
     * The default layout requires large display.
@@ -48,7 +48,7 @@
     * the ability to fullscreen a particular pipeline for triage.
     * clone an issue/card
 * The tree-closing window (TCW)
-  * While it generally went OK, we didn't manage to accomplish all the work we planned due to slower performance on the production database than we saw in staging.
+  * We didn't manage to accomplish all the work we planned due to slower performance on the production database than we saw in staging.
     * We still don't understand the reason(s) behind the performance difference.
 * We could have had better communication with CloudOps in the run-up to the TCW.
   * If we're planning for people to need to work weekends, we should involve them in the process as early as possible.
