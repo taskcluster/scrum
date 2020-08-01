@@ -63,10 +63,13 @@
   * The team found Zenhub useful for triaging issues added to the Icebox because the volume is low.
     * ...whereas Github was more useful for larger triage of New Issues/Product Backlog
 * Product owner responsibilities
-  * Now that we have access to it, the burndown chart is essential for visualizing progress and delays.
+  * Now that we have access to it, the [burndown chart](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/reports/burndown?milestoneId=5499987) is essential for visualizing progress and delays.
   * Keeping on top of burndown chart is now a primary responsibility for the Product Owner, although the rest of the team show also be looking at it.
     * Be sure to compare the view with "In Progress" issues included alongside the view with only "Closed" issues.
     * To help avoid the initial plateau of productivity, future Product Owners are encouraged to front-load sprints with smaller issues/pieces of work to help people ramp up, especially when they are unfamiliar with the domain.
+  * When organizing the sprint, it's important to consider factors that might introduce delays and schedule accordingly. Two such factors we encountered during this sprint were:
+    1. Reviews for known large changes - some of the database table changes requires thousands of lines of code and proper reviews take time; and,
+    2. Deployments - while most deployments can happen quickly, there are external factors like CloudOps availability and Firefox release schedules that we need to account for.
 * Stand-ups
   * We decided that forcing people on the west coast to sacrifice their sleep to attend stand-ups was not kind.
     * Also, east coast people found it strange to reporting status midway through their day.
