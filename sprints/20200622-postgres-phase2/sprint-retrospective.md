@@ -31,6 +31,8 @@
   * Flexibility in TCW timing with Release Management
     * We were able to schedule the TCW a week later than it would have normally taken place.
     * Because systems are generally better automated and more resilient than a few years ago. RelMan can be more flexible with timing, provided we engage them early and we have a solid rollback story.
+* [Online migration](https://github.com/taskcluster/taskcluster/issues/3235)
+  * This saved our bacon after the TCW rollback, allowing us to get back on track with the sprint. It is also a very useful tool to have in our back pocket for future work.
 * Zenhub
   * The Zenhub tooling around issues proved better (more full-featured) than the github version.
   * The blocking/blocker labelling was useful
