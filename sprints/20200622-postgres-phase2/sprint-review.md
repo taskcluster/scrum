@@ -1,11 +1,11 @@
 # Sprint Review - Postgres phase 2, June 22 - July 24, 2020
 
 ## Goal
-This was a more mechanical sprint than previous sprints, but we knew that going in. Our goal was to migrate the existing entities-based database storage system that mimiced the initial Azure JSON blob storage schema to a proper relational view where data was stored in a well-defined column structure. This was reflected in our choice of Epics for this sprint.
+This was a more mechanical sprint than previous sprints, but we knew that going in. Our goal was to migrate the existing entities-based database storage system that mimicked the Azure JSON blob datastore to a proper relational schema where data was stored in a well-defined column structure. This was reflected in our choice of Epics for this sprint.
 
 ### Epics
-1. [All DB data is stored as relational tables with columns instead of entities]https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/issues/taskcluster/scrum/3
-2. [Create and update tools to facilitate work with new db format](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/issues/taskcluster/scrum/3)
+1. [Create and update tools to facilitate work with new db format](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/issues/taskcluster/scrum/3)
+2. [All DB data is stored as relational tables with columns instead of entities](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/issues/taskcluster/scrum/3)
 
 ## Outcomes
 All told, there were 28 tables to migrate to the new format. @helfi92 and @djmitche had come up with a well-documented, 2-step migration plan that made most table migrations easy. In some cases, we tried to address table structure issues that were relics of thge Azure storage, e.g. extra queue tables that existed solely to provide another index, but this was the exception rather than the rule.
@@ -14,7 +14,7 @@ By the official end of the sprint (July 24), 26 of the 28 tables had been migrat
 
 We knew going into this sprint that is was going to be a lot of work and we scheduled 5 weeks deliberately. If the work planned TCW (see below) had proven successful, we would have been on track to finish on schedule.
 
-As a result of the delay introduced by the TCW, @helfi92 opted as _Product owner_ to constrain the critical path to [Epic 1](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/issues/taskcluster/scrum/3) to ensure all the tables were migrated.
+As a result of the delay introduced by the TCW, @helfi92 opted as _Product owner_ to constrain the critical path to [Epic 2](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/issues/taskcluster/scrum/3) to ensure all the tables were migrated to the new format.
 
 At the end of the sprint, the team moved any non-table migration issues labelled “db” from the Current Sprint Backlog to the Product Backlog. We also did an explicit scan of the New Issues and Product Backlog pipelines and labelled
 
@@ -41,17 +41,12 @@ The real danger here was that the work was monotonous and repetitive. One team m
 
 Of the two steps in the migration process, the mechanical first step was the most prone to issues. Step 2 involved updating database function and left a little more room for thought and design. Despite the very regimented nature of the sprint, team members appreciated that there was was some latitude for judgment and even design on some issues. For example, we didn't completely understand how we were going to tackle crypto and signing before the sprint began, but scheduled work to figure them out along the way.  
 
-Overall, the previous lack of team experience with postgres caused a few issues, but these were largely mitigated by the docs and tooling put together by @helfi92 and @djmitche. One particular example of a tooling improvement that could have been beneficial if we'd had it sooner is the [support for named arguments in db functions](https://github.com/taskcluster/taskcluster/issues/2928). As we closed out the sprint, the team felt confident that we had enough collective knowledge with psotgres now to accomplish the things we want to do with Taskcluster in the future. At the same time, we felt it prudent to try to collect a list of postgres resources/contractors that we could turn to if we did need help.
+Overall, the previous lack of team experience with postgres caused a few issues, but these were largely mitigated by the docs and tooling put together by @helfi92 and @djmitche. One particular example of a tooling improvement that could have been beneficial if we'd had it sooner is the [support for named arguments in db functions](https://github.com/taskcluster/taskcluster/issues/2928). As we closed out the sprint, the team felt confident that we had enough collective knowledge with psotgres now to accomplish the things we want to do with Taskcluster in the future. At the same time, we felt it prudent to try to collect a list of postgres resources/contractors that we could turn to if we did need help with design or performance. @coop is reaching out to @selenamarie to start compiling that list.
 
-Does the future of TC include long downtimes?
-Not if we want TC to ever be used outside Mozilla
-Short downtimes, or online migrations
-Need to budget more time (online migrations take longer)
-Online migration of queue took 49 hours, but involved no downtime
-Judicious use of downtime
-Downtime budget exceeded (but not by much)
-Burndown chart reveals early lag
-Table changes (esp. Large ones) require more review, up to a week
-Deployment adds another lag
+Our experience with the recent TCW has made us rethink our approach to tree closures going forward. Can we afford to take long downtimes in the future? Our feeling is "No." With the volume of data being manipulated in the firefox-ci cluster, future work touching large tables would need to be lengthy. Witness that we budgeted 12 hours for the most recent downtime and still ran out of time. Certainly if we have any hope of ever seeing Taskcluster used outside of Mozilla, asking external users to take multiple hours of downtime for upgrades is a hard sell and possibly even a non-starter.
 
-It seems unlikely at this point that we would have a future sprint focused entirely on the database, i.e. a Postgres phase 3. Now that the database is in a more-usable state, small bits of database work will happen naturally as part of sprints focused on other things.
+We now have a useful model for online migrations based on [the recovery work after the TCW](https://github.com/taskcluster/taskcluster/issues/3235). @djmitche is going to make notes about his process and we are considering creating a framework that we can choose to apply to future migrations. Online migrations do take longer -- this one took over two days -- so we will need to budget more time for those. However, it seems unlikely that we will require a database migration of the same scale as this sprint any time soon. For most smaller table migrations, this approach is also overkill. Instead, we will be focusing on shorter downtimes measured in minutes to migrate tables during natural lulls in the workday, and will be working with sheriffs to schedule those.
+
+There was some concern about exceeding our error budget with the recent TCW. All told, trees were closed for 14 hours instead of 12. While not the most egregious delay we've ever experienced/caused, it is still prudent to be judicious in the coming months with our downtime requests. 
+
+It seems unlikely at this point that we would have another sprint focused entirely on the database, i.e. a Postgres phase 3. Now that the Taskcluster database is in a state more conducive to hacking and experimentation, small bits of database work will happen naturally as part of future sprints focused on other areas.
