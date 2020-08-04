@@ -12,11 +12,11 @@ All told, there were 28 tables to migrate to the new format. @helfi92 and @djmit
 
 By the official end of the sprint (July 24), 26 of the 28 tables had been migrated in code, and the remaining two tables had code owners who were continuing to work on their migration. I say "in code" because, as of the time of writing, all of the database changes have not yet been pushed to the live clusters -- community & firefox-ci -- due to delays caused by the TCW (see below) and ongoing Firefox releases that made it preferable to *not* change the underlying infrastructure unduly.
 
-We knew going into this sprint that is was going to be a lot of work and we scheduled 5 weeks deliberately. If the work planned TCW (see below) had proven successful, we would have been on track to finish on schedule.
+We knew going into this sprint that it was going to be a lot of work and we scheduled 5 weeks deliberately. If the work planned TCW (see below) had proven successful, we would have been on track to finish on schedule.
 
 As a result of the delay introduced by the TCW, @helfi92 opted as _Product owner_ to constrain the critical path to [Epic 2](https://app.zenhub.com/workspaces/taskcluster-5ed15d37c2d9744af28567dc/issues/taskcluster/scrum/3) to ensure all the tables were migrated to the new format.
 
-At the end of the sprint, the team moved any non-table migration issues labelled “db” from the Current Sprint Backlog to the Product Backlog. We also did an explicit scan of the New Issues and Product Backlog pipelines and labelled
+At the end of the sprint, the team moved any non-table migration issues labelled “db” from the Current Sprint Backlog to the Product Backlog. We also did an explicit scan of the New Issues and Product Backlog pipelines and labelled any database-related issues with "db" as well.
 
 ### Tree-closing Window (TCW)
 During the TCW, the migration of one of the larger queue tables for the firefox-ci cluster proceeded much more slowly than anticipated by previous experiments. The same query that had taken ~5 hours in the development environment was still running after 10 hours on the production cluster, and was predicted to take at least another 6 hours. Rather than hold the trees closed beyond the planned 12-hour window, we canceled the running query and performed a rollback.
