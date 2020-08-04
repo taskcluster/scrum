@@ -61,6 +61,7 @@ An _initiative_ is a collection of one or more milestones that, taken together, 
 * [Artifact Integrity](https://docs.google.com/document/d/14miyPpGnpiyvFb93-doV7ENcKjwSdZYUV1VplPEcRqU/edit#heading=h.jgvxmoleismy)
 * [Structured Logging for Workers](https://bugzilla.mozilla.org/show_bug.cgi?id=1529660)
 * [More secure, well-documented process for interactive tasks](https://github.com/taskcluster/taskcluster-rfcs/issues/41)
+* [Decommission docker-worker](https://bugzilla.mozilla.org/show_bug.cgi?id=1499055)
 * Automatically land config changes to community-tc
 * Move frequently-updated complex configuration out of the deployment config and into the API
 * Help users construct taskcluster.yml
