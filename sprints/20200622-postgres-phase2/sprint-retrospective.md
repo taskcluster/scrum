@@ -7,7 +7,7 @@
   * It was large, but mostly mechanical, process
     * It could have been tempting to not continue to phase 2 and stick with entities.
     * Boring, but necessary and fruitful work in order to realize the other benefits of postgres down the road.
-    * Got it done, like ripping a bandaid off
+    * Got it done, like ripping a band-aid off
     * Over 30K lines of code changed, mostly in same area
     * @petemoore touched node code and survived!
       * @petemoore was also on PTO for the final two weeks of the sprint yet we still managed to get stuff done.
@@ -43,7 +43,7 @@
 * Zenhub
   * Despite generally being a welcome addition to the sprint process, we ran into some issues with Zenhub that weren't great:
     * Occasional blank pages, sometimes associated with switching tabs.
-    * Labels that we added to issues sometimes went missing, i.e. our changes didn’t stick and we needed to redo some work.
+    * Labels that we added to issues sometimes went missing, i.e. our changes didn't stick and we needed to redo some work.
     * The default layout requires large display.
       * @imbstack found it hard to use on a small laptop screen.
   * Nice-to-have features we wish the tool had:
