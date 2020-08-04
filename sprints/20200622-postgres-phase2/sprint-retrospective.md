@@ -77,5 +77,6 @@
     * Also, east coast people found it strange to reporting status midway through their day.
     * @petemoore was on PTO, so we didn't get his feedback re: CEST timing
   * New model will have localized stand-ups at 09:30 for each timezone
-    * We will also try to automate the announcement of the stand-ups in the Slack channel using the gcal integration.
+    * We will try to automate the announcement of the stand-ups in the Slack channel using the gcal integration.
+    * We will also try the Zenhub slack integration to inject more status into the channel automatically. We understand that this may make the channel noisy at the start of future sprints.
     * It is still incumbent on the Product Owner and Scrum Master to review the daily stand-up notes to look for blockers or other problems.
