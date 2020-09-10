@@ -7,10 +7,10 @@
 * Issues were at the correct level of decomposition
 * Similar issues for people who were just learning the subject area
   * Having different team members working on separate cloud providers made it easy to collaborate and come up with a holistic approach quickly.
-* Scaling ratios are useful lever to have again
-  * [Miles'](https://github.com/milescrabill) work on scaling ratios was called out as a particularly big win.
-* Ending the sprint early was the correct call.
-  * Brian made the decision as Product Owner to cancel the sprint after the layoffs were announced. This was absolutely the correct thing to do.
+* Scaling ratios are a useful lever to have again
+  * [Miles'](https://github.com/milescrabill) work on scaling ratios was called out as a particularly big win for provisioning.
+* Ending the sprint early
+  * Brian made the decision as Product Owner to cancel the sprint after the layoffs were announced. This was absolutely the correct thing to do. No one could focus anyway.
 
 ## What didn't
 * Still ended up with one major thrust of the sprint being blocked on one big chunk of work from one person
@@ -20,7 +20,7 @@
 
 ## Process changes for next sprint
 * Try hard to actually have independent chunks of work
-  * If there is one "big chunk" of work, it should be an epic in it's own right, if it's foundational, it should be the focus rather than a piece.
+  * If there is one "big chunk" of work, it should be an epic in its own right. If a piece of work is foundational, it should be the focus of the sprint rather than a piece.
 * Identify issues that are likely to require decomposition and assign them more story points at the outset
   * The burndown chart hasn’t been very realistic. We continue adding story points after start of sprint
 * Perform sprint planning out-of-band and *then* transfer data to Zenhub
