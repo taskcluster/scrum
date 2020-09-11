@@ -152,7 +152,20 @@ The _Scrum master_ is paying attention to these updates to make sure that blocke
 Once a week, the _Product owner_ and the _Scrum master_ will meet to assess sprint progress. Using the burndown chart, they figure out whether the sprint is still on track and can be completed within the allotted time. If necessary, the critical path can be refined to allow partial delivery of the original objective. Under extraordinary circumstances, they can opt to end the current sprint.
 
 ### Ending the sprint
-As the sprint draws to a close, the _Product owner_ and _Scrum master_ will meet to decide what issues from the _Current Sprint Backlog_ (if anything) still needs to be done. The _Scrum master_ will move all issues that have not been started to the Product Backlog pipeline. The _Product owner_ will engage with developers who still have work in progress to figure out how and when to wrap-up that work during the _Time between sprints_.
+As the sprint draws to a close the _Scrum master_ with schedule two meetings for a Review and a Retrospective. These meetings are usually scheduled back-to-back for convenience.
+
+In the Review meeting, the _Product owner_ will lead the discussion. The focus will we be on the content of the sprint and the outcomes achieved. Feedback on the sprint content will also be collected. At the end of the Review meeting, the team will triage any outstanding issues from the sprint. The _Product owner_ will engage with developers who still have work marked as **In Progress** to figure out how and when to wrap-up that work during the _[Time between sprints](#time-between-sprints)_.  All issues that have not been started will be moved back into the **Product Backlog**.
+
+In the Retrospective meeting, the _Scrum master_ will lead the discussion. The focus will be on the sprint process itself in an attempt to uncover grey areas and process improvements. If the team agrees to adopt a particular process change, it should be clearly marked in the meeting notes with an **ACTION** label and the person responsible for that action, if appropriate.
+
+Notes for both meetings should be taken using the templates provided:
+
+* sprints/
+  * templates/
+    * [sprint-retrospective.md](./sprints/templates/sprint-retrospective.md)
+    * [sprint-review.md](./sprints/templates/sprint-review.md)
+
+As process changes are adopted, [this document](./README.md) should be updated to reflect the new process.
 
 ### Time between sprints
 We allow ourselves *one week* between sprints. This buffer allows us to analyze the previous sprint without the pressure of immediately jumping into something new. Pragmatically speaking, it also gives us the time to finish off sprint items that may still require deployment, to address unanticipated fallout from the previous sprint, and to deal with the backlog of small, timely requests that may have accumulated during the sprint.
