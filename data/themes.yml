@@ -1,0 +1,36 @@
+# Format is
+# 
+# <theme-id>:
+#   title: <theme title>  # one line
+#   description: >-
+#     <theme description> # multiline, markdown
+
+actionable-data:
+  title: Make data actionable
+  description: >-
+    TBD
+
+tc-adoption:
+  title: Promote external adoption
+  description: >-
+    Promote adoption and use of Taskcluster more broadly than Firefox CI
+
+usability:
+  title: Improve usability
+  description: >-
+    Improve Taskcluster's usability and suitability for common uses.  This
+    includes both quality-of-life improvements and substantial features to
+    support users' needs.
+
+cost-reduction:
+  title: Support cost reduction
+  description: >-
+    Build functionality that can be used to reduce CI costs
+
+operations:
+  title: More efficient, reliable operations
+  description: >-
+    Improve our operational efficiency, including
+     * Management of Community-TC
+     * Support for deployment and operation of Taskcluster (configuration, logging, monitoring, etc.)
+     * General team operations (secret handling, access control, etc.)

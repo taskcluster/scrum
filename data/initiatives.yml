@@ -1,0 +1,111 @@
+# Format is
+# 
+# <initiative-id>:
+#   title: <initiative title>  # one line
+#   theme: <theme-id>                # singular or plural
+#   themes: [<theme-id>, <theme-id>] # is acceptable
+#   description: >-
+#     <initiative description> # multiline, markdown
+
+azure-to-postgres:
+  title: Switch the Taskcluster datastore from Azure to Postgres
+  theme: actionable-data
+  description: >-
+    [more information](https://github.com/orgs/taskcluster/projects/6)
+
+worker-runner-everywhere:
+  title: Use worker-runner everywhere
+  themes:
+    - usability
+    - operations
+  description: >-
+    [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1602946)
+
+service-deployment-streamlined:
+  title: Streamline service deployment configuration
+  theme: operations
+  description: >-
+    [more information](https://github.com/taskcluster/taskcluster/projects/8)
+
+object-services:
+  title: Implement the Object Service
+  themes:
+    - cost-reduction
+    - tc-adoption
+    - actionable-data
+  description: >-
+    [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1471582)
+
+project-id:
+  title: Implement projectId
+  themes:
+    - usability
+    - actionable-data
+  description: >-
+    [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1607487)
+
+task-queue-id:
+  title: Implement taskQueueId
+  theme: usability
+  description: >-
+    [more information](https://github.com/taskcluster/taskcluster-rfcs/pull/145)
+
+checks-api:
+  title: Implement the Github Checks API
+  themes:
+    - usability
+    - tc-adoption
+  description: >-
+    [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1459645)
+
+use-sops:
+  title: Use SOPS instead of password-store
+  theme: operations
+  description: >-
+    [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1483320)
+
+artifact-integrity:
+  title: Artifact Integrity
+  theme: usability
+  description: >-
+    [more information](https://docs.google.com/document/d/14miyPpGnpiyvFb93-doV7ENcKjwSdZYUV1VplPEcRqU/edit#heading=h.jgvxmoleismy)
+
+worker-structured-logging:
+  title: Structured Logging for Workers
+  theme: actionable-data
+  description: >-
+    [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1529660)
+
+secure-interactive-tasks:
+  title: More secure, well-documented process for interactive tasks
+  theme: usability
+  description: >-
+    [more information](https://github.com/taskcluster/taskcluster-rfcs/issues/41)
+
+decom-docker-worker:
+  title: Decommission docker-worker
+  theme: usability
+  description: >-
+    [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1499055)
+
+community-tc-deployment:
+  title: Automatically deploy config changes to community-tc
+  theme: operations
+  description: TBD
+
+config-in-api:
+  title: Move frequently-updated complex configuration out of the deployment config and into the API
+  theme: usability
+  description: TBD
+
+taskcluster-yml-helper:
+  title: Help users construct taskcluster.yml
+  themes:
+    - usability
+    - tc-adoption
+  description: TBD
+
+worker-capacity-estimates:
+  title: Better worker capacity estimates
+  theme: cost-reduction
+  description: TBD
