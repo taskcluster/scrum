@@ -1,8 +1,8 @@
-# Themes
+# Initiatives
 
-Themes are large focus areas than span the Mozilla organization and are pertinent and addressable by the Taskcluster team.
+An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Taskcluster team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
 
-The following are the current themes:
+The following are the current initiatives:
 
 * [Artifact Integrity](#artifact-integrity)
 * [Switch the Taskcluster datastore from Azure to Postgres](#azure-to-postgres)
@@ -21,7 +21,7 @@ The following are the current themes:
 * [Use worker-runner everywhere](#worker-runner-everywhere)
 * [Structured Logging for Workers](#worker-structured-logging)
 
-To update this information, edit `data/themes.yml` and run `generate.py`.
+To update this information, edit `data/initiatives.yml` and run `generate.py`.
 
 ## artifact-integrity
 *Artifact Integrity*

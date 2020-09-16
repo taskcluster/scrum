@@ -15,7 +15,7 @@ To update this information, edit `data/themes.yml` and run `generate.py`.
 {body}
 """
 
-INITIATIVE_TPL = """\
+INITIATIVES_TPL = """\
 # Initiatives
 
 An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Taskcluster team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.
@@ -111,7 +111,7 @@ def write_initiatives():
         toc = '\n'.join(toc)
         body = "\n\n".join(body)
 
-        f.write(THEMES_TPL.format(toc=toc, body=body))
+        f.write(INITIATIVES_TPL.format(toc=toc, body=body))
 
 def main():
     load_data()
