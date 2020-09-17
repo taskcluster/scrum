@@ -23,7 +23,9 @@ worker-runner-everywhere:
 
 service-deployment-streamlined:
   title: Streamline service deployment configuration
-  theme: operations
+  theme:
+    - operations
+    - tc-adoption
   description: >-
     [more information](https://github.com/taskcluster/taskcluster/projects/8)
 
