@@ -1,0 +1,49 @@
+version: 1
+policy:
+  pullRequests: public
+tasks:
+  $let:
+    should_run:
+      $if: 'tasks_for == "github-pull-request"'
+      then: {$eval: 'event["action"] in ["opened", "reopened", "synchronize"]'}
+      else: {$eval: 'tasks_for == "github-push"'}
+    clone_url:
+      $if: 'tasks_for == "github-pull-request"'
+      then: ${event.pull_request.head.repo.clone_url}
+      else: ${event.repository.clone_url}
+    sha:
+      $if: 'tasks_for == "github-pull-request"'
+      then: ${event.pull_request.head.sha}
+      else: ${event.after}
+  in:
+  - $if: should_run
+    then:
+      provisionerId: proj-taskcluster
+      workerType: ci
+      deadline: {$fromNow: '1 day'}
+      payload:
+        maxRunTime: 3600
+        image: "python:3.8"
+        command:
+          - /bin/bash
+          - '--login'
+          - '-c'
+          - >-
+            git clone ${clone_url} repo &&
+            cd repo &&
+            git config advice.detachedHead false &&
+            git checkout ${sha} &&
+            pip install -r requirements.txt &&
+            python generate.py &&
+            if ! output=$(git status --porcelain) || [ -n "$output" ]; then
+                echo "*** generate.py produced changes to the repository; these changes should be checked in ***";
+                git --no-pager diff;
+                exit 1;
+            fi
+
+      metadata:
+        name: "taskcluster-scrum generate"
+        description: >-
+          Generate initiatives and themes and validate
+        owner: taskcluster-internal@mozilla.com
+        source: ${clone_url}
