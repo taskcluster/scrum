@@ -99,6 +99,8 @@ def write_initiatives():
                 '',
                 init['description'],
                 '',
+                f'[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3A{id})',
+                '',
                 f'*Addresses {"Themes" if len(init["themes"]) != 1 else "Theme"}:*',
                 '',
             ]

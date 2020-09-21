@@ -27,6 +27,8 @@ To update this information, edit `data/initiatives.yml` and run `generate.py`.
 
 [more information](https://docs.google.com/document/d/14miyPpGnpiyvFb93-doV7ENcKjwSdZYUV1VplPEcRqU/edit#heading=h.jgvxmoleismy)
 
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aartifact-integrity)
+
 *Addresses Theme:*
 
 * [Improve usability](./themes.md#usability)
@@ -36,6 +38,8 @@ To update this information, edit `data/initiatives.yml` and run `generate.py`.
 *Implement the Github Checks API*
 
 [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1459645)
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Achecks-api)
 
 *Addresses Themes:*
 
@@ -48,6 +52,8 @@ To update this information, edit `data/initiatives.yml` and run `generate.py`.
 
 TBD
 
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Acommunity-tc-deployment)
+
 *Addresses Theme:*
 
 * [More efficient, reliable operations](./themes.md#operations)
@@ -57,6 +63,8 @@ TBD
 *Move frequently-updated complex configuration out of the deployment config and into the API*
 
 TBD
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aconfig-in-api)
 
 *Addresses Theme:*
 
@@ -68,6 +76,8 @@ TBD
 
 [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1499055)
 
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Adecom-docker-worker)
+
 *Addresses Theme:*
 
 * [Improve usability](./themes.md#usability)
@@ -77,6 +87,8 @@ TBD
 *Implement the Object Service*
 
 [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1471582)
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aobject-service)
 
 *Addresses Themes:*
 
@@ -90,6 +102,8 @@ TBD
 
 [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1607487)
 
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aproject-id)
+
 *Addresses Themes:*
 
 * [Improve usability](./themes.md#usability)
@@ -101,6 +115,8 @@ TBD
 
 [more information](https://github.com/taskcluster/taskcluster-rfcs/issues/41)
 
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Asecure-interactive-tasks)
+
 *Addresses Theme:*
 
 * [Improve usability](./themes.md#usability)
@@ -110,6 +126,8 @@ TBD
 *Streamline service deployment configuration*
 
 [more information](https://github.com/taskcluster/taskcluster/projects/8)
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aservice-deployment-streamlined)
 
 *Addresses Themes:*
 
@@ -122,6 +140,8 @@ TBD
 
 [more information](https://github.com/taskcluster/taskcluster-rfcs/pull/145)
 
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atask-queue-id)
+
 *Addresses Theme:*
 
 * [Improve usability](./themes.md#usability)
@@ -131,6 +151,8 @@ TBD
 *Help users construct taskcluster.yml*
 
 TBD
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Ataskcluster-yml-helper)
 
 *Addresses Themes:*
 
@@ -143,6 +165,8 @@ TBD
 
 [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1483320)
 
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Ause-sops)
+
 *Addresses Theme:*
 
 * [More efficient, reliable operations](./themes.md#operations)
@@ -152,6 +176,8 @@ TBD
 *Better worker capacity estimates*
 
 TBD
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aworker-capacity-estimates)
 
 *Addresses Theme:*
 
@@ -163,6 +189,8 @@ TBD
 
 [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1602946)
 
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aworker-runner-everywhere)
+
 *Addresses Themes:*
 
 * [Improve usability](./themes.md#usability)
@@ -173,6 +201,8 @@ TBD
 *Structured Logging for Workers*
 
 [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1529660)
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aworker-structured-logging)
 
 *Addresses Theme:*
 
