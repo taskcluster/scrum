@@ -29,7 +29,7 @@ service-deployment-streamlined:
   description: >-
     [more information](https://github.com/taskcluster/taskcluster/projects/8)
 
-object-services:
+object-service:
   title: Implement the Object Service
   themes:
     - cost-reduction

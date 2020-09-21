@@ -10,7 +10,7 @@ The following are the current initiatives:
 * [Automatically deploy config changes to community-tc](#community-tc-deployment)
 * [Move frequently-updated complex configuration out of the deployment config and into the API](#config-in-api)
 * [Decommission docker-worker](#decom-docker-worker)
-* [Implement the Object Service](#object-services)
+* [Implement the Object Service](#object-service)
 * [Implement projectId](#project-id)
 * [More secure, well-documented process for interactive tasks](#secure-interactive-tasks)
 * [Streamline service deployment configuration](#service-deployment-streamlined)
@@ -84,7 +84,7 @@ TBD
 * [Improve usability](./themes.md#usability)
 
 
-## object-services
+## object-service
 *Implement the Object Service*
 
 [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1471582)
