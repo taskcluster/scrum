@@ -105,3 +105,11 @@ worker-capacity-estimates:
   title: Better worker capacity estimates
   theme: cost-reduction
   description: TBD
+
+private-deployments:
+  title: Support private taskcluster deployments
+  themes:
+    - tc-adoption
+  description: >-
+    Support deployments of Taskcluster which do not provide open access to
+    read-only information, while still allowing such public deployments.
