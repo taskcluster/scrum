@@ -19,7 +19,6 @@ TBD
 
 *Associated Initiatives:*
 
-* [Switch the Taskcluster datastore from Azure to Postgres](./initiatives.md#azure-to-postgres)
 * [Implement the Object Service](./initiatives.md#object-service)
 * [Implement projectId](./initiatives.md#project-id)
 * [Structured Logging for Workers](./initiatives.md#worker-structured-logging)

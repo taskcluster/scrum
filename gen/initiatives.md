@@ -5,7 +5,6 @@ An _initiative_ is a collection of one or more milestones that, taken together, 
 The following are the current initiatives:
 
 * [Artifact Integrity](#artifact-integrity)
-* [Switch the Taskcluster datastore from Azure to Postgres](#azure-to-postgres)
 * [Implement the Github Checks API](#checks-api)
 * [Automatically deploy config changes to community-tc](#community-tc-deployment)
 * [Move frequently-updated complex configuration out of the deployment config and into the API](#config-in-api)
@@ -31,16 +30,6 @@ To update this information, edit `data/initiatives.yml` and run `generate.py`.
 *Addresses Theme:*
 
 * [Improve usability](./themes.md#usability)
-
-
-## azure-to-postgres
-*Switch the Taskcluster datastore from Azure to Postgres*
-
-[more information](https://github.com/orgs/taskcluster/projects/6)
-
-*Addresses Theme:*
-
-* [Make data actionable](./themes.md#actionable-data)
 
 
 ## checks-api
