@@ -122,9 +122,10 @@ TBD
 
 [more information](https://github.com/taskcluster/taskcluster/projects/8)
 
-*Addresses Theme:*
+*Addresses Themes:*
 
 * [More efficient, reliable operations](./themes.md#operations)
+* [Promote external adoption](./themes.md#tc-adoption)
 
 
 ## task-queue-id

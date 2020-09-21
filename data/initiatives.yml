@@ -23,7 +23,7 @@ worker-runner-everywhere:
 
 service-deployment-streamlined:
   title: Streamline service deployment configuration
-  theme:
+  themes:
     - operations
     - tc-adoption
   description: >-
