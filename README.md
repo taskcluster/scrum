@@ -9,7 +9,6 @@ Table of Contents
       * [Definitions](#definitions)
          * [Theme](#theme)
          * [Initiative](#initiative)
-            * [Current Initiatives](#current-initiatives)
          * [Milestone](#milestone)
          * [Epic](#epic)
          * [Issue](#issue)
@@ -37,7 +36,11 @@ We generally follow [the Atlassian model](https://www.atlassian.com/agile/projec
 
 Theme -> Initiative -> Milestone -> Epic -> Issue
 
+### Theme
+
 A _theme_ is a large focus area than spans the Mozilla organization and is pertinent to and addressable by the Taskcluster team.  Themes are gathered [here](https://github.com/taskcluster/scrum/blob/main/gen/themes.md).
+
+### Initiative
 
 An _initiative_ is a collection of one or more milestones that, taken together, address one or more themes. Initiatives map to major projects that the Taskcluster team would like to accomplish, and can be either new functionality or substantial reworks of existing functionality. Depending on the project area, an initiative can be a thin wrapper around a single milestone if that milestone is high value and self-contained.  Initiatives are gathered [here](https://github.com/taskcluster/scrum/blob/main/gen/initiatives.md).
 
