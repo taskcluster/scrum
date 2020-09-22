@@ -1,5 +1,5 @@
 # Format is
-# 
+#
 # <initiative-id>:
 #   title: <initiative title>  # one line
 #   theme: <theme-id>                # singular or plural
@@ -113,3 +113,28 @@ private-deployments:
   description: >-
     Support deployments of Taskcluster which do not provide open access to
     read-only information, while still allowing such public deployments.
+
+automated-worker-image-builds:
+  title: Automatic rebuilding of worker machine images
+  themes:
+    - operations
+    - cost-reduction
+  description: >-
+    Cloud based workers include references to virtual machine images, which comprise of:
+
+      * a host operating system
+      * a worker implementation (e.g. docker-worker or generic-worker)
+      * dependencies of those tools (e.g. virtual audio/video drivers, special kernel version, ...)
+      * other runtime taskcluster dependencies (taskcluster-proxy, livelog, worker-runner, ...)
+      * for workers that run tasks directly on host: worker-pool specific tools and toolchains
+
+    Worker Manager cloud-based worker pools are associated to an image, or to a
+    set of machine images (for clouds where a unique image per region is
+    required). Several worker pools can utilise the same image set, so machine
+    images are generally _not_ unique to a given worker pool.
+
+    This initiative is about enabling the automatic build of cloud machine
+    images whenever those host definitions change in
+    mozilla/community-tc-config, so that it is no longer necessary for humans
+    to trigger machine builds manually, or modify machine image references in
+    Worker Manager worker pool definitions.
