@@ -33,6 +33,7 @@ Build functionality that can be used to reduce CI costs
 
 * [Implement the Object Service](./initiatives.md#object-service)
 * [Better worker capacity estimates](./initiatives.md#worker-capacity-estimates)
+* [Automatic rebuilding of worker machine images](./initiatives.md#automated-worker-image-builds)
 
 
 ## operations
@@ -49,6 +50,7 @@ Improve our operational efficiency, including
 * [Streamline service deployment configuration](./initiatives.md#service-deployment-streamlined)
 * [Use SOPS instead of password-store](./initiatives.md#use-sops)
 * [Automatically deploy config changes to community-tc](./initiatives.md#community-tc-deployment)
+* [Automatic rebuilding of worker machine images](./initiatives.md#automated-worker-image-builds)
 
 
 ## tc-adoption

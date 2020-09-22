@@ -5,6 +5,7 @@ An _initiative_ is a collection of one or more milestones that, taken together, 
 The following are the current initiatives:
 
 * [Artifact Integrity](#artifact-integrity)
+* [Automatic rebuilding of worker machine images](#automated-worker-image-builds)
 * [Implement the Github Checks API](#checks-api)
 * [Automatically deploy config changes to community-tc](#community-tc-deployment)
 * [Move frequently-updated complex configuration out of the deployment config and into the API](#config-in-api)
@@ -33,6 +34,28 @@ To update this information, edit `data/initiatives.yml` and run `generate.py`.
 *Addresses Theme:*
 
 * [Improve usability](./themes.md#usability)
+
+
+## automated-worker-image-builds
+*Automatic rebuilding of worker machine images*
+
+Cloud based workers include references to virtual machine images, which comprise of:
+
+  * a host operating system
+  * a worker implementation (e.g. docker-worker or generic-worker)
+  * dependencies of those tools (e.g. virtual audio/video drivers, special kernel version, ...)
+  * other runtime taskcluster dependencies (taskcluster-proxy, livelog, worker-runner, ...)
+  * for workers that run tasks directly on host: worker-pool specific tools and toolchains
+
+Worker Manager cloud-based worker pools are associated to an image, or to a set of machine images (for clouds where a unique image per region is required). Several worker pools can utilise the same image set, so machine images are generally _not_ unique to a given worker pool.
+This initiative is about enabling the automatic build of cloud machine images whenever those host definitions change in mozilla/community-tc-config, so that it is no longer necessary for humans to trigger machine builds manually, or modify machine image references in Worker Manager worker pool definitions.
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aautomated-worker-image-builds)
+
+*Addresses Themes:*
+
+* [More efficient, reliable operations](./themes.md#operations)
+* [Support cost reduction](./themes.md#cost-reduction)
 
 
 ## checks-api
