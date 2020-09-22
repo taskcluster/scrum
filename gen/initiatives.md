@@ -10,6 +10,7 @@ The following are the current initiatives:
 * [Move frequently-updated complex configuration out of the deployment config and into the API](#config-in-api)
 * [Decommission docker-worker](#decom-docker-worker)
 * [Implement the Object Service](#object-service)
+* [Support private taskcluster deployments](#private-deployments)
 * [Implement projectId](#project-id)
 * [More secure, well-documented process for interactive tasks](#secure-interactive-tasks)
 * [Streamline service deployment configuration](#service-deployment-streamlined)
@@ -95,6 +96,18 @@ TBD
 * [Support cost reduction](./themes.md#cost-reduction)
 * [Promote external adoption](./themes.md#tc-adoption)
 * [Make data actionable](./themes.md#actionable-data)
+
+
+## private-deployments
+*Support private taskcluster deployments*
+
+Support deployments of Taskcluster which do not provide open access to read-only information, while still allowing such public deployments.
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aprivate-deployments)
+
+*Addresses Theme:*
+
+* [Promote external adoption](./themes.md#tc-adoption)
 
 
 ## project-id
