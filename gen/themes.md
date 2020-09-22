@@ -19,7 +19,6 @@ TBD
 
 *Associated Initiatives:*
 
-* [Switch the Taskcluster datastore from Azure to Postgres](./initiatives.md#azure-to-postgres)
 * [Implement the Object Service](./initiatives.md#object-service)
 * [Implement projectId](./initiatives.md#project-id)
 * [Structured Logging for Workers](./initiatives.md#worker-structured-logging)
@@ -59,6 +58,7 @@ Promote adoption and use of Taskcluster more broadly than Firefox CI
 
 *Associated Initiatives:*
 
+* [Streamline service deployment configuration](./initiatives.md#service-deployment-streamlined)
 * [Implement the Object Service](./initiatives.md#object-service)
 * [Implement the Github Checks API](./initiatives.md#checks-api)
 * [Help users construct taskcluster.yml](./initiatives.md#taskcluster-yml-helper)

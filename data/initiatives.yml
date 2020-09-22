@@ -7,12 +7,6 @@
 #   description: >-
 #     <initiative description> # multiline, markdown
 
-azure-to-postgres:
-  title: Switch the Taskcluster datastore from Azure to Postgres
-  theme: actionable-data
-  description: >-
-    [more information](https://github.com/orgs/taskcluster/projects/6)
-
 worker-runner-everywhere:
   title: Use worker-runner everywhere
   themes:
@@ -23,7 +17,7 @@ worker-runner-everywhere:
 
 service-deployment-streamlined:
   title: Streamline service deployment configuration
-  theme:
+  themes:
     - operations
     - tc-adoption
   description: >-
