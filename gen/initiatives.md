@@ -6,6 +6,7 @@ The following are the current initiatives:
 
 * [Artifact Integrity](#artifact-integrity)
 * [Automatic rebuilding of worker machine images](#automated-worker-image-builds)
+* [Bring careers website up to standards, into bedrock](#careers-website)
 * [Implement the Github Checks API](#checks-api)
 * [Automatically deploy config changes to community-tc](#community-tc-deployment)
 * [Move frequently-updated complex configuration out of the deployment config and into the API](#config-in-api)
@@ -33,7 +34,7 @@ To update this information, edit `data/initiatives.yml` and run `generate.py`.
 
 *Addresses Theme:*
 
-* [Improve usability](./themes.md#usability)
+* [Improve Taskcluster usability](./themes.md#usability)
 
 
 ## automated-worker-image-builds
@@ -54,8 +55,20 @@ This initiative is about enabling the automatic build of cloud machine images wh
 
 *Addresses Themes:*
 
-* [More efficient, reliable operations](./themes.md#operations)
+* [Team Operations](./themes.md#operations)
 * [Support cost reduction](./themes.md#cost-reduction)
+
+
+## careers-website
+*Bring careers website up to standards, into bedrock*
+
+Address some long-standing issues with the careers website and work to integrate it into the bedrock system so that it remains up-to-date.
+
+[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Acareers-website)
+
+*Addresses Theme:*
+
+* [Project Maintenance](./themes.md#maintenance)
 
 
 ## checks-api
@@ -67,8 +80,8 @@ This initiative is about enabling the automatic build of cloud machine images wh
 
 *Addresses Themes:*
 
-* [Improve usability](./themes.md#usability)
-* [Promote external adoption](./themes.md#tc-adoption)
+* [Improve Taskcluster usability](./themes.md#usability)
+* [Promote Taskcluster's external adoption](./themes.md#tc-adoption)
 
 
 ## community-tc-deployment
@@ -80,7 +93,7 @@ TBD
 
 *Addresses Theme:*
 
-* [More efficient, reliable operations](./themes.md#operations)
+* [Team Operations](./themes.md#operations)
 
 
 ## config-in-api
@@ -92,7 +105,7 @@ TBD
 
 *Addresses Theme:*
 
-* [Improve usability](./themes.md#usability)
+* [Improve Taskcluster usability](./themes.md#usability)
 
 
 ## decom-docker-worker
@@ -104,7 +117,7 @@ TBD
 
 *Addresses Theme:*
 
-* [Improve usability](./themes.md#usability)
+* [Improve Taskcluster usability](./themes.md#usability)
 
 
 ## object-service
@@ -117,7 +130,7 @@ TBD
 *Addresses Themes:*
 
 * [Support cost reduction](./themes.md#cost-reduction)
-* [Promote external adoption](./themes.md#tc-adoption)
+* [Promote Taskcluster's external adoption](./themes.md#tc-adoption)
 * [Make data actionable](./themes.md#actionable-data)
 
 
@@ -130,7 +143,7 @@ Support deployments of Taskcluster which do not provide open access to read-only
 
 *Addresses Theme:*
 
-* [Promote external adoption](./themes.md#tc-adoption)
+* [Promote Taskcluster's external adoption](./themes.md#tc-adoption)
 
 
 ## project-id
@@ -142,7 +155,7 @@ Support deployments of Taskcluster which do not provide open access to read-only
 
 *Addresses Themes:*
 
-* [Improve usability](./themes.md#usability)
+* [Improve Taskcluster usability](./themes.md#usability)
 * [Make data actionable](./themes.md#actionable-data)
 
 
@@ -155,7 +168,7 @@ Support deployments of Taskcluster which do not provide open access to read-only
 
 *Addresses Theme:*
 
-* [Improve usability](./themes.md#usability)
+* [Improve Taskcluster usability](./themes.md#usability)
 
 
 ## service-deployment-streamlined
@@ -167,8 +180,8 @@ Support deployments of Taskcluster which do not provide open access to read-only
 
 *Addresses Themes:*
 
-* [More efficient, reliable operations](./themes.md#operations)
-* [Promote external adoption](./themes.md#tc-adoption)
+* [Improve Taskcluster usability](./themes.md#usability)
+* [Promote Taskcluster's external adoption](./themes.md#tc-adoption)
 
 
 ## task-queue-id
@@ -180,7 +193,7 @@ Support deployments of Taskcluster which do not provide open access to read-only
 
 *Addresses Theme:*
 
-* [Improve usability](./themes.md#usability)
+* [Improve Taskcluster usability](./themes.md#usability)
 
 
 ## taskcluster-yml-helper
@@ -192,8 +205,8 @@ TBD
 
 *Addresses Themes:*
 
-* [Improve usability](./themes.md#usability)
-* [Promote external adoption](./themes.md#tc-adoption)
+* [Improve Taskcluster usability](./themes.md#usability)
+* [Promote Taskcluster's external adoption](./themes.md#tc-adoption)
 
 
 ## use-sops
@@ -205,7 +218,7 @@ TBD
 
 *Addresses Theme:*
 
-* [More efficient, reliable operations](./themes.md#operations)
+* [Team Operations](./themes.md#operations)
 
 
 ## worker-capacity-estimates
@@ -227,10 +240,9 @@ TBD
 
 [*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Aworker-runner-everywhere)
 
-*Addresses Themes:*
+*Addresses Theme:*
 
-* [Improve usability](./themes.md#usability)
-* [More efficient, reliable operations](./themes.md#operations)
+* [Improve Taskcluster usability](./themes.md#usability)
 
 
 ## worker-structured-logging

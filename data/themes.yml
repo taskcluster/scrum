@@ -8,29 +8,38 @@
 actionable-data:
   title: Make data actionable
   description: >-
-    TBD
+    Provide data to project stakeholders that can be used to make decisions
+    about the project.
 
 tc-adoption:
-  title: Promote external adoption
+  title: Promote Taskcluster's external adoption
   description: >-
     Promote adoption and use of Taskcluster more broadly than Firefox CI
 
 usability:
-  title: Improve usability
+  title: Improve Taskcluster usability
   description: >-
     Improve Taskcluster's usability and suitability for common uses.  This
     includes both quality-of-life improvements and substantial features to
-    support users' needs.
+    support users' needs.  This includes support for deployment and operation
+    of Taskcluster (configuration, logging, monitoring, etc.)
 
 cost-reduction:
   title: Support cost reduction
   description: >-
-    Build functionality that can be used to reduce CI costs
+    Build functionality that can be used to reduce costs for the projects we
+    develop and operate.
+
+maintenance:
+  title: Project Maintenance
+  description: >-
+    Ongoing maintenance of Mozilla software projects, with specific goals in
+    mind for each project, such as continued operation, retirement, or handoff
+    to another team (internal or external).
 
 operations:
-  title: More efficient, reliable operations
+  title: Team Operations
   description: >-
     Improve our operational efficiency, including
      * Management of Community-TC
-     * Support for deployment and operation of Taskcluster (configuration, logging, monitoring, etc.)
      * General team operations (secret handling, access control, etc.)
