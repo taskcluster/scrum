@@ -6,16 +6,17 @@ The following are the current themes:
 
 * [Make data actionable](#actionable-data)
 * [Support cost reduction](#cost-reduction)
-* [More efficient, reliable operations](#operations)
-* [Promote external adoption](#tc-adoption)
-* [Improve usability](#usability)
+* [Project Maintenance](#maintenance)
+* [Team Operations](#operations)
+* [Promote Taskcluster's external adoption](#tc-adoption)
+* [Improve Taskcluster usability](#usability)
 
 To update this information, edit `data/themes.yml` and run `generate.py`.
 
 ## actionable-data
 *Make data actionable*
 
-TBD
+Provide data to project stakeholders that can be used to make decisions about the project.
 
 *Associated Initiatives:*
 
@@ -27,7 +28,7 @@ TBD
 ## cost-reduction
 *Support cost reduction*
 
-Build functionality that can be used to reduce CI costs
+Build functionality that can be used to reduce costs for the projects we develop and operate.
 
 *Associated Initiatives:*
 
@@ -36,25 +37,32 @@ Build functionality that can be used to reduce CI costs
 * [Automatic rebuilding of worker machine images](./initiatives.md#automated-worker-image-builds)
 
 
+## maintenance
+*Project Maintenance*
+
+Ongoing maintenance of Mozilla software projects, with specific goals in mind for each project, such as continued operation, retirement, or handoff to another team (internal or external).
+
+*Associated Initiatives:*
+
+* [Bring careers website up to standards, into bedrock](./initiatives.md#careers-website)
+
+
 ## operations
-*More efficient, reliable operations*
+*Team Operations*
 
 Improve our operational efficiency, including
  * Management of Community-TC
- * Support for deployment and operation of Taskcluster (configuration, logging, monitoring, etc.)
  * General team operations (secret handling, access control, etc.)
 
 *Associated Initiatives:*
 
-* [Use worker-runner everywhere](./initiatives.md#worker-runner-everywhere)
-* [Streamline service deployment configuration](./initiatives.md#service-deployment-streamlined)
 * [Use SOPS instead of password-store](./initiatives.md#use-sops)
 * [Automatically deploy config changes to community-tc](./initiatives.md#community-tc-deployment)
 * [Automatic rebuilding of worker machine images](./initiatives.md#automated-worker-image-builds)
 
 
 ## tc-adoption
-*Promote external adoption*
+*Promote Taskcluster's external adoption*
 
 Promote adoption and use of Taskcluster more broadly than Firefox CI
 
@@ -68,13 +76,14 @@ Promote adoption and use of Taskcluster more broadly than Firefox CI
 
 
 ## usability
-*Improve usability*
+*Improve Taskcluster usability*
 
-Improve Taskcluster's usability and suitability for common uses.  This includes both quality-of-life improvements and substantial features to support users' needs.
+Improve Taskcluster's usability and suitability for common uses.  This includes both quality-of-life improvements and substantial features to support users' needs.  This includes support for deployment and operation of Taskcluster (configuration, logging, monitoring, etc.)
 
 *Associated Initiatives:*
 
 * [Use worker-runner everywhere](./initiatives.md#worker-runner-everywhere)
+* [Streamline service deployment configuration](./initiatives.md#service-deployment-streamlined)
 * [Implement projectId](./initiatives.md#project-id)
 * [Implement taskQueueId](./initiatives.md#task-queue-id)
 * [Implement the Github Checks API](./initiatives.md#checks-api)
