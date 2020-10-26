@@ -2,12 +2,12 @@
 
 ## What worked
 * Better appreciation for worker space
-  * Like the last sprint, this "extra" epic validated that all epics in a sprint don't need to address the same initiative. Both @dustin and @imbstack
+  * Like the last sprint, this "extra" epic validated that all epics in a sprint don't need to address the same initiative. Both @djmitche and @imbstack
 * Most of team now has baseline knowledge about auth & lib-api
 * An external contributor, @ricky26, delivered one of our epics(!!!)
   * Getting someone else to do your work for you is highly recommended. :)
 * Pairing (or tripling) is useful
-  * @helfi92, @jwhitlock, and @petemoore found it sueful once again to collaborate on an area of the code where none of them were necessarily experts.
+  * @helfi92, @jwhitlock, and @petemoore found it useful once again to collaborate on an area of the code where none of them were necessarily experts.
 
 ## What didn't
 * Epic decomposition was not fantastic, especially for anonymous scopes.
