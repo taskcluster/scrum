@@ -10,6 +10,8 @@
   * [@helfi92](https://github.com/helfi92), [@jwhitlock](https://github.com/jwhitlock), and [@petemoore](https://github.com/petemoore) found it useful once again to collaborate on an area of the code where none of them were necessarily experts.
 * People jumped in to help when the sprint went long.
   * Both [@imbstack](https://github.com/imbstack) and [@helfi92](https://github.com/helfi92) stepped up to inherit epics from others.
+* Assigning product owners per epic
+  * This effectively spread the oversight across multiple people which was very helpful when all the epics were not tackling the same initiatives.
 
 ## What didn't
 * Epic decomposition was not fantastic, especially for anonymous scopes.
@@ -37,3 +39,5 @@
   * **ACTION**: leverage existing blocking functionality in zenhub
   * **ACTION**: add extra story points for big changes
   * **ACTION**: RFCs should be written outside the sprint process because the amount of time required to review and iterate is hard to predict
+* Different epics can have different product owners
+  * **ACTION**: assign product owners per epic
