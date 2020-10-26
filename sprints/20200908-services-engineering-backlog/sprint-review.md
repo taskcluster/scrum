@@ -1,6 +1,6 @@
 # Sprint Review - Services Engineering Backlog, September 8 - September 18, 2020
 
-**Product Owner**: [Coop](https://github.com/ccooper)
+**Product Owner**: [Coop](https://github.com/ccooper)<br/>
 **Scrum Master**: [Coop](https://github.com/ccooper)
 
 ## Goal
