@@ -1,7 +1,7 @@
 # Sprint Review - Services Engineering Backlog, September 8 - September 18, 2020
 
-**Product Owner**: [Coop](/ccooper)  
-**Scrum Master**: [Coop](/ccooper)
+**Product Owner**: [Coop](https://github.com/ccooper)
+**Scrum Master**: [Coop](https://github.com/ccooper)
 
 ## Goal
 This sprint was chosen primarily for motivational purposes. After a period of low morale following the Mozilla layoffs, the team elected to engage in a shorter sprint to address some epics in our backlog that were either already well understood or that could be clarified to enable future sprints.
