@@ -2,12 +2,14 @@
 
 ## What worked
 * Better appreciation for worker space
-  * Like the last sprint, this "extra" epic validated that all epics in a sprint don't need to address the same initiative. Both @djmitche and @imbstack
+  * Like the last sprint, this "extra" epic validated that all epics in a sprint don't need to address the same initiative. Both [@djmitche](https://github.com/djmitche) and [@imbstack](https://github.com/imbstack)
 * Most of team now has baseline knowledge about auth & lib-api
-* An external contributor, @ricky26, delivered one of our epics(!!!)
+* An external contributor, [@ricky26](https://github.com/ricky26), delivered one of our epics(!!!)
   * Getting someone else to do your work for you is highly recommended. :)
 * Pairing (or tripling) is useful
-  * @helfi92, @jwhitlock, and @petemoore found it useful once again to collaborate on an area of the code where none of them were necessarily experts.
+  * [@helfi92](https://github.com/helfi92), [@jwhitlock](https://github.com/jwhitlock), and [@petemoore](https://github.com/petemoore) found it useful once again to collaborate on an area of the code where none of them were necessarily experts.
+* People jumped in to help when the sprint went long.
+  * Both [@imbstack](https://github.com/imbstack) and [@helfi92](https://github.com/helfi92) stepped up to inherit epics from others.
 
 ## What didn't
 * Epic decomposition was not fantastic, especially for anonymous scopes.
@@ -23,15 +25,15 @@
 * Reviewing RFCs (i.e. big changes) takes a long time
   * Also review by multiple people is required.
   * Cycle time and number of cycles to decide an RFC is generally unknown at the outset, so it's not something we should be trying to accomplish within the framework of a sprint.
-    * *HOWEVER*, if someone is responsible for writing an RFC, this should be factored in to sprint planning and fewer available story points should be alotted.
+    * *HOWEVER*, if someone *is* responsible for writing an RFC, this should be factored in to sprint planning and fewer available story points should be alotted.
 
 ## Process changes for next sprint
 * Don’t anticipate needs of Firefox CI
-  * ACTION: plan for Taskcluster and community needs only
+  * **ACTION**: plan for Taskcluster and community needs only
 * First implementation doesn’t need to make it to production
-  * ACTION: gauge experience with code area and budget time to learn and make mistakes
-  * ACTION: Change one service or API at a time
+  * **ACTION**: gauge experience with code area and budget time to learn and make mistakes
+  * **ACTION**: Change one service or API at a time
 * Structure epics for better parallelism
-  * ACTION: leverage existing blocking functionality in zenhub
-  * ACTION: add extra story points for big changes
-  * ACTION: RFCs should be written outside the sprint process because the amount of time required to review and iterate is hard to predict
+  * **ACTION**: leverage existing blocking functionality in zenhub
+  * **ACTION**: add extra story points for big changes
+  * **ACTION**: RFCs should be written outside the sprint process because the amount of time required to review and iterate is hard to predict
