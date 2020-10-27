@@ -20,7 +20,7 @@ Table of Contents
          * [2. Scrum master](#2-scrum-master)
          * [3. Future sprint champion](#3-future-sprint-champion)
       * [Sprint process](#sprint-process)
-         * [Planning a sprint](#choosing-the-next-sprint)
+         * [Planning a sprint](#planning-a-sprint)
              * [Estimation](#estimation)
          * [Choosing the next sprint](#choosing-the-next-sprint)
          * [Workspace configuration](#workspace-configuration)
