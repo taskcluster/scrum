@@ -83,29 +83,48 @@ Any issues that are purely process-based (e.g. scrum documentaion) should be fil
 ## Roles
 We have three defined roles in our agile process:
 ### 1. Product owner
-The _Product owner_ manages the product backlog and keeps the rest of the team working on the most important thing. They have the final decision on matters of scope. They can also change the scope of the current milestone or, at their discretion, end the sprint early.
+The _Product owner_ manages the product backlog and keeps the rest of the team working on the most important thing. They have the final decision on matters of scope. They can also change the scope of the current milestone or, at their discretion, end the sprint early. 
+
+#### 1a. Epic owner
+For sprints composed of multiple, unrelated epics, an _Epic owner_ can functionally be assigned per epic. 
 
 ### 2. Scrum master
 The _Scrum master_ deals with the scrum process itself. They run the kick-off meetings, the daily stand-ups, and the wrap-up meetings (review & retrospective) for every sprint. They prompt developers for status and follow-up when developers are blocked. They support the Product owner in whatever way the Product owner deems necessary. The _Scrum master_ also works with _Future sprint champions_ to ensure high quality, well-scoped milestones for future sprints.
 
 ### 3. Future sprint champion
-The _Future sprint champion_ is responsible for organizing issues in the Product Backlog into a cohesive milestone that the team can work towards in a future sprint. They are expected to devote a few hours every week to triaging issues in the backlog to refine the scope for the future sprint. Note: there can be multiple _Future sprint champions_ active at one time.
+The _Future sprint champion_ is responsible for organizing issues in the Product Backlog into cohesive epics that the team can work towards in a future sprint. They are expected to devote a few hours every week to triaging issues in the backlog to refine the scope for the future sprint. Note: there can be multiple _Future sprint champions_ active at one time.
 
 ## Sprint process
 
-### Choosing the next sprint
-During the previous sprint, one or more Future sprint champions do the work organize the work around new milestones. User stories are discussed and converted into Epics. New issues are filed or existing issues are tagged against the upcoming milestone. Estimates are made on each issue, often through consultation with other team members. Care should be taken to avoid adding too much work to a given milestone, and the issue estimates are a good tool to gauge how conservative to be. Care should also be taken to plan around upcoming holidays and vacation to avoid over-packing the next sprint.
+### Planning a sprint
+During the previous sprint, one or more Future sprint champions do the work organize the issues into epics, and epics into new milestones. User stories are discussed and converted into Epics. New issues are filed or existing issues are tagged against the upcoming milestone.
 
+Zenhub allows setting dependencies between issues. While we need to be careful to avoid having _too many_ dependencies within a given sprint to avoid blocking work, we should leverage dependencies to help reveal the critical path for sprints.
+
+When planning for upcoming sprints, we should focus on the needs of Taskcluster and the community deployment. We can act on specific requests or use cases from the Firefox deployment, but we should not assume anything on their behalf. This will help avoid Mozilla-specific solutions and potential re-work later on.
+
+As much as possible, [RFCs](https://github.com/taskcluster/taskcluster-rfcs) should be written *outside* the sprint process, with only implementation happening within the context of sprints. If the amount of work required for implementation is unclear, estimates should be higher.
+
+#### Estimation
+The Taskcluster team uses Fibonacci-scale story points for estimation. Each team member is assumed to be able to deliver on 3-4 story points in a given week. This gives individuals time to deal with interrupts and also to pursue some professional development time. Care should also be taken to plan around upcoming holidays and vacation to avoid over-packing the next sprint.
+
+The first step for sprint estimation is adding up the available story points for all team members over the coming weeks to see what the maximum achievable amount of work is. Combined point estimates for milestones need to fit within that limit to be achievable and realistic.
+
+Story point estimates are made on each issue, often through consultation with other team members. Care should be taken to avoid adding too much work to a given milestone, and the issue estimates are a good tool to gauge how conservative to be.
+
+Some areas of the Taskcluster code are easier to deal with than others. If the issues or epics involved modifying code in a service that is less well-known or difficult to test (e.g. auth), story point estimates should be higher by default.
+
+### Choosing the next sprint
 As we near the end of the current sprint, the milestone for the next sprint is often obvious based on organizational needs or follow-on work that builds on the current sprint. If there are multiple milestones possible, they should all be added to the roadmap. This helps keep customers and external parties informed.
 
-If multiple future sprints are ready and there are no other factors to aid decision, the _Scrum master_ will decide.
+If multiple future sprints are ready and there are no other factors to aid decision, the _Scrum master_ will decide which sprint will come next.
 
 ### Workspace configuration
 We have the following pipelines (columns) configured in Zenhub:
 * **Icebox**: issues we will never work on. These may be valid, but are not a priority given finite time and resources.
-* **New Issues**: newly-filed issues. They will remain here until triaged and labelled to go into either the Product Backlog, Next Sprint, Current Sprint Backlog, In Progress, or Icebox pipeline.
+* **New Issues**: newly-filed issues. They will remain here until triaged and labeled to go into either the Product Backlog, Next Sprint, Current Sprint Backlog, In Progress, or Icebox pipeline.
 * **Product Backlog**: triaged issues that are not part of the current sprint or an upcoming sprint.
-* **Next Sprint**: issues that have been labelled and are being groomed for an upcoming sprint. Note: all upcoming sprints (there can be several being planned in parallel) share this pipeline.
+* **Next Sprint**: issues that have been labeled and are being groomed for an upcoming sprint. Note: all upcoming sprints (there can be several being planned in parallel) share this pipeline.
 * **Current Sprint Backlog**: issues that are part of the current sprint that are not being worked on yet.
 * **In Progress**: issues that are being worked on.
 * **Done**: White shores, and beyond, a far green country under a swift sunrise.
