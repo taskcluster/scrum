@@ -41,3 +41,5 @@
   * **ACTION**: RFCs should be written outside the sprint process because the amount of time required to review and iterate is hard to predict
 * Different epics can have different product owners
   * **ACTION**: assign product owners per epic
+* Factor in review time for code areas that are security-sensitive or less well-known
+  * **ACTION**: add extra story points to issues that will require in-depth review

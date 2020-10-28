@@ -115,7 +115,7 @@ The first step for sprint estimation is adding up the available story points for
 
 Story point estimates are made on each issue, often through consultation with other team members. Care should be taken to avoid adding too much work to a given milestone, and the issue estimates are a good tool to gauge how conservative to be.
 
-Some areas of the Taskcluster code are easier to deal with than others. If the issues or epics involved modifying code in a service that is less well-known or difficult to test (e.g. auth), story point estimates should be higher by default.
+Some areas of the Taskcluster code are easier to deal with than others. If the issues or epics involve modifying code in a service that is less well-known or difficult to test (e.g. auth), story point estimates should be higher by default to recognize the need for closer inspection on review.
 
 ### Choosing the next sprint
 As we near the end of the current sprint, the milestone for the next sprint is often obvious based on organizational needs or follow-on work that builds on the current sprint. If there are multiple milestones possible, they should all be added to the roadmap. This helps keep customers and external parties informed.
