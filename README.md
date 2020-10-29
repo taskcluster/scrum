@@ -89,7 +89,7 @@ We have three defined roles in our agile process:
 The _Product owner_ manages the product backlog and keeps the rest of the team working on the most important thing. They have the final decision on matters of scope. They can also change the scope of the current milestone or, at their discretion, end the sprint early. 
 
 #### 1a. Epic owner
-For sprints composed of multiple, unrelated epics, an _Epic owner_ can functionally be assigned per epic. 
+For sprints composed of multiple, unrelated epics, a different _Product owner_ can be assigned per epic. 
 
 ### 2. Scrum master
 The _Scrum master_ deals with the scrum process itself. They run the kick-off meetings, the daily stand-ups, and the wrap-up meetings (review & retrospective) for every sprint. They prompt developers for status and follow-up when developers are blocked. They support the Product owner in whatever way the Product owner deems necessary. The _Scrum master_ also works with _Future sprint champions_ to ensure high quality, well-scoped milestones for future sprints.
