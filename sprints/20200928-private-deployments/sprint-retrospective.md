@@ -2,7 +2,7 @@
 
 ## What worked
 * Better appreciation for worker space
-  * Like the last sprint, this "extra" epic validated that all epics in a sprint don't need to address the same initiative. Both [@djmitche](https://github.com/djmitche) and [@imbstack](https://github.com/imbstack)
+  * Like the last sprint, this "extra" epic validated that all epics in a sprint don't need to address the same initiative. Both [@djmitche](https://github.com/djmitche) and [@imbstack](https://github.com/imbstack) commented that the rest of the team is slowly gaining confidence in what was once one of our biggest knowledge silos.
 * Most of team now has baseline knowledge about auth & lib-api
 * An external contributor, [@ricky26](https://github.com/ricky26), delivered one of our epics(!!!)
   * Getting someone else to do your work for you is highly recommended. :)
