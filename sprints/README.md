@@ -1,4 +1,9 @@
 # Taskcluster team sprints
+
+* **Private Taskcluster Deployments**: September 28 - October 23, 2020
+  * [Project board](https://app.zenhub.com/workspaces/services-engineering-5ed15d37c2d9744af28567dc/board?milestones=Sprint%205%3A%20Private%20Taskcluster%20deployments%232020-10-23&repos=161867312,199742618,257988948,269405817,284731663,294202511)
+  * [Review](./20200928-private-deployments/sprint-review.md)
+  * [Retrospective](./20200928-private-deployments/sprint-retrospective.md)
 * **Services Engineering Backlog**: September 8 - September 18, 2020
   * [Project board](https://app.zenhub.com/workspaces/services-engineering-5ed15d37c2d9744af28567dc/board?milestones=Services%20Engineering%20Backlog%232020-09-18&filterLogic=any&repos=161867312,207857296,199742618,257988948,269405817,210879143i)
   * [Review](./20200908-services-engineering-backlog/sprint-review.md)
