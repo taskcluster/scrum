@@ -10,6 +10,10 @@
 ## Goal
 Coming out of the [previous sprint](https://github.com/taskcluster/scrum/blob/main/sprints/20200928-private-deployments/sprint-review.md), we knew we had some high-priority issues that couldn't wait for bundling into their own sprint. Work on the Object service had already been postponed repeatedly, so we elected to pursue a reduced-scope MVP for the Object service while simultaneously addressing the high-priority fixes.
 
+### Milestone
+* [Sprint 7: Object Service, Careers Site](https://app.zenhub.com/workspaces/services-engineering-5ed15d37c2d9744af28567dc/board?milestones=Sprint%207%3A%20Object%20Service%2C%20Careers%20Site%232020-12-04&filterLogic=any&repos=161867312,207857296,199742618,257988948,269405817,210879143,284731663,9521528,294202511)
+* [Burndown report](https://app.zenhub.com/workspaces/services-engineering-5ed15d37c2d9744af28567dc/reports/burndown?milestoneId=6013788)
+
 ### Epics
 1. [Object service: Build a minimum viable object service](https://github.com/taskcluster/scrum/issues/32)
 2. [Object service: Add a simple download process to the object service](https://github.com/taskcluster/scrum/issues/34)
@@ -17,6 +21,7 @@ Coming out of the [previous sprint](https://github.com/taskcluster/scrum/blob/ma
 4. [Object service: Add real storage backends to the object service](https://github.com/taskcluster/scrum/issues/36)
 5. [Sprint 7 high-priority fixes](https://github.com/taskcluster/scrum/issues/45)
 6. [Address issue backlog for the Careers website](https://github.com/taskcluster/scrum/issues/41)
+
 
 ## Outcomes
 Results were mixed, at least within the planned time bounds of the sprint.
