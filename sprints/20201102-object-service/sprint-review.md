@@ -4,6 +4,7 @@
 * Object Service: [@djmitche](https://github.com/djmitche)
 * Careers Site: [@ccooper](https://github.com/ccooper)
 * High-priority Fixes: [@ccooper](https://github.com/ccooper)
+
 **Scrum Master**: [@ccooper](https://github.com/ccooper)
 
 ## Goal
@@ -20,7 +21,7 @@ Coming out of the [previous sprint](https://github.com/taskcluster/scrum/blob/ma
 ## Outcomes
 Results were mixed, at least within the planned time bounds of the sprint.
 
-While we did end up with an Object service MVP by the scheduled end of the sprint, the work to support a GCS backend was delayed well beyond the end of the sprint. GCS is one of the few upcoming use-cases for the Object service that is currently known, so this was disappointing, but also important to get right.
+While we did end up with an Object service MVP by the scheduled end of the sprint, the work to support a [GCS backend](https://github.com/taskcluster/taskcluster/issues/3718) was delayed well beyond the end of the sprint. GCS is one of the few upcoming use-cases for the Object service that is currently known, so this was disappointing, but also important to get right.
 
 The high-priority fixes were all resolved. Unfortunately the patch to address the [MLS observation queue issue](https://github.com/mozilla/ichnaea/issues/1398) wasn't ready prior to the US Thanksgiving break, and we needed to deploy it afterwards. This delay meant that we weren't able to push the fix to production until after the sprint was over.
 
