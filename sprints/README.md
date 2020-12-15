@@ -1,6 +1,6 @@
 # Taskcluster team sprints
 
-* **Object Service, Careers Website **: November 2 - December 4, 2020
+* **Object Service, Careers Website**: November 2 - December 4, 2020
   * [Project board](https://app.zenhub.com/workspaces/services-engineering-5ed15d37c2d9744af28567dc/board?milestones=Sprint%207%3A%20Object%20Service,%20Careers%20Site%232020-12-04&filterLogic=any&repos=161867312,207857296,199742618,257988948,269405817,210879143,284731663,9521528,294202511)
   * [Review](./20201102-object-service/sprint-review.md)
   * [Retrospective](./20201102-object-service/sprint-retrospective.md)
