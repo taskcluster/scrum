@@ -2,7 +2,7 @@
 
 ## What worked
 * All of us have now worked on Object service at different levels
-  * For new services like the Object service, this is important. In general, more input leads to a better product and everyone has the exposure to think and comment knowledgeably about the service. This model will hopefully translate to fewer projects that wither on-the-vine in the future due to lack of ownership or investment.
+  * For new services like the Object service, this is important. In general, more input leads to a better product. Everyone has now had the exposure to think and comment knowledgeably about this service. This model will hopefully translate to fewer projects that wither on-the-vine in the future due to lack of ownership or investment.
 * Team load sharing
   * Once again the team proved flexible and adaptable in shifting between disparate epics and going where the need was the greatest.
 
@@ -13,7 +13,7 @@
   * *However*, the counterpoint is that the remaining work is less palatable to the rest of the team. This team has many senior engineers, and picking up the scraps is less appealing.
 * Planning the work
   * Unambiguously, proper planning of the sprints is important and leads to better outcomes.
-  * As we saw in the postgres sprint, the planning process can/should involve code. This can take the form of tooling to facilitate team involvement and output consistency, or testing or metrics frameworks to enable measurement of outcomes.
+  * As we saw in the postgres sprint, the planning process can/should involve code. This can take the form of tooling to facilitate team involvement and output consistency, or testing/metrics frameworks to validate and measure outcomes.
 * Sprints work well once we achieve a certain level of maturity
   * During early work/design, a more singular focus is required. The Product owner is affored this luxury of time.
   * The Product owner can spend that time to solidify design decisions (and explore alternatives) that would be challenging to revisit mid-sprint.
@@ -24,15 +24,18 @@
     * Sprints should only involve as many people as required. People who aren’t involved can be handling interrupts, high-priority fixes, or planning future sprints.
     * This would result in more targeted sprints. We should avoid adding "filler" epics to sprints just to involve everyone.
   * This would also make working around PTO easier.
-  * Caveat: we need to make sure people rotate through sprint involvement to make sure no one is stuck handling interrupts all the time. Avoid "interruptduty."
+  * Caveat: we need to make sure people rotate through sprint involvement to make sure no one is stuck handling interrupts all the time. Avoid "interrupt duty."
 * Should we have longer slush weeks?
   * Yes and no
   * Having more time for investigations would be good, but if sprints are more targeted and don't necessarily involve the whole team, those team members not involved in the sprint will have more opportunity to do this. We recognize that the time for digressions and explorations based on discovery is important.
   * “Slush week” needs a better name
     * Proposals:
       * Individual exploration time
+      * Jogs
+      * Cooldown
+      * Warm-up
       * foopyfoopy
-      * persona
+      * Persona
   * Accountability is still important during slush weeks or while not actively participating in a sprint.
     * The question becomes "What will I _choose_ to work on?" Impact matters.
 * Don’t schedule sprints over big breaks
