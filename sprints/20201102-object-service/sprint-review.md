@@ -30,7 +30,7 @@ While we did end up with an Object service MVP by the scheduled end of the sprin
 
 The high-priority fixes were all resolved. Unfortunately the patch to address the [MLS observation queue issue](https://github.com/mozilla/ichnaea/issues/1398) wasn't ready prior to the US Thanksgiving break, and we needed to deploy it afterwards. This delay meant that we weren't able to push the fix to production until after the sprint was over.
 
-The Careers website epic was finished very quickly in early Novemeber. However the monthly deployment schedule for the Careers website meant that the changes weren't live for until early December. We have since addressed the deployment cadence with the Marketing Operations to ensure more timely deployments in the future.
+The Careers website epic was finished very quickly in early Novemeber. However the monthly deployment schedule for the Careers website meant that the changes weren't live for until early December. We have since addressed the deployment cadence with the Marketing Operations team to ensure more timely deployments in the future.
 
 ## Feedback
 The team felt like the issue decomposition worked well on this iteration.
@@ -38,3 +38,5 @@ The team felt like the issue decomposition worked well on this iteration.
 For the Object service, we successfully constrained our ambition and hit an achievable goal with the MVP. Big projects are hard, and need to be broken down at some level. It was tempting to try to accomplish more, especially given the previous delays with working on the Object service. 20% of a larger goal still a good thing. We are now all anxious to see it to fruition.
 
 Of the high-priority fixes, the [Azure cert issue](https://github.com/taskcluster/taskcluster/issues/3669) fix proved particularly timely as [Azure changed their certs](https://docs.microsoft.com/en-ca/azure/security/fundamentals/tls-certificate-changes) with very little warning in the middle of our sprint.
+
+As a team, we seem to chronically miss the end of our sprints. It is unclear whether this is an estimation issue or a motivation issue. Team members may feel little pressure to land things before the planned end date of the sprint if they know they can catch up in the slush week after.
