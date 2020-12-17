@@ -117,6 +117,8 @@ Story point estimates are made on each issue, often through consultation with ot
 
 Some areas of the Taskcluster code are easier to deal with than others. If the issues or epics involve modifying code in a service that is less well-known or difficult to test (e.g. auth), story point estimates should be higher by default to recognize the need for closer inspection on review.
 
+Shorter sprints are preferred, i.e. 1 to 3 weeks. Not all team members need to be involved in every sprint. Avoid the temptation to add "filler" work just so everyone can participate.
+
 ### Choosing the next sprint
 As we near the end of the current sprint, the milestone for the next sprint is often obvious based on organizational needs or follow-on work that builds on the current sprint. If there are multiple milestones possible, they should all be added to the roadmap. This helps keep customers and external parties informed.
 
