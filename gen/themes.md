@@ -44,7 +44,6 @@ Ongoing maintenance of Mozilla software projects, with specific goals in mind fo
 
 *Associated Initiatives:*
 
-* [Bring careers website up to standards, into bedrock](./initiatives.md#careers-website)
 
 
 ## operations
@@ -85,7 +84,6 @@ Improve Taskcluster's usability and suitability for common uses.  This includes 
 * [Use worker-runner everywhere](./initiatives.md#worker-runner-everywhere)
 * [Streamline service deployment configuration](./initiatives.md#service-deployment-streamlined)
 * [Implement projectId](./initiatives.md#project-id)
-* [Implement taskQueueId](./initiatives.md#task-queue-id)
 * [Implement the Github Checks API](./initiatives.md#checks-api)
 * [Artifact Integrity](./initiatives.md#artifact-integrity)
 * [More secure, well-documented process for interactive tasks](./initiatives.md#secure-interactive-tasks)

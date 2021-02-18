@@ -6,7 +6,6 @@ The following are the current initiatives:
 
 * [Artifact Integrity](#artifact-integrity)
 * [Automatic rebuilding of worker machine images](#automated-worker-image-builds)
-* [Bring careers website up to standards, into bedrock](#careers-website)
 * [Implement the Github Checks API](#checks-api)
 * [Automatically deploy config changes to community-tc](#community-tc-deployment)
 * [Move frequently-updated complex configuration out of the deployment config and into the API](#config-in-api)
@@ -16,7 +15,6 @@ The following are the current initiatives:
 * [Implement projectId](#project-id)
 * [More secure, well-documented process for interactive tasks](#secure-interactive-tasks)
 * [Streamline service deployment configuration](#service-deployment-streamlined)
-* [Implement taskQueueId](#task-queue-id)
 * [Help users construct taskcluster.yml](#taskcluster-yml-helper)
 * [Use SOPS instead of password-store](#use-sops)
 * [Better worker capacity estimates](#worker-capacity-estimates)
@@ -57,18 +55,6 @@ This initiative is about enabling the automatic build of cloud machine images wh
 
 * [Team Operations](./themes.md#operations)
 * [Support cost reduction](./themes.md#cost-reduction)
-
-
-## careers-website
-*Bring careers website up to standards, into bedrock*
-
-Address some long-standing issues with the careers website and work to integrate it into the bedrock system so that it remains up-to-date.
-
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Acareers-website)
-
-*Addresses Theme:*
-
-* [Project Maintenance](./themes.md#maintenance)
 
 
 ## checks-api
@@ -182,18 +168,6 @@ Support deployments of Taskcluster which do not provide open access to read-only
 
 * [Improve Taskcluster usability](./themes.md#usability)
 * [Promote Taskcluster's external adoption](./themes.md#tc-adoption)
-
-
-## task-queue-id
-*Implement taskQueueId*
-
-[more information](https://github.com/taskcluster/taskcluster-rfcs/pull/145)
-
-[*Associated Epics*](https://github.com/taskcluster/scrum/issues?q=is%3Aissue+is%3Aopen+label%3Ainitiative%3Atask-queue-id)
-
-*Addresses Theme:*
-
-* [Improve Taskcluster usability](./themes.md#usability)
 
 
 ## taskcluster-yml-helper
