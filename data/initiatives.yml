@@ -39,12 +39,6 @@ project-id:
   description: >-
     [more information](https://bugzilla.mozilla.org/show_bug.cgi?id=1607487)
 
-task-queue-id:
-  title: Implement taskQueueId
-  theme: usability
-  description: >-
-    [more information](https://github.com/taskcluster/taskcluster-rfcs/pull/145)
-
 checks-api:
   title: Implement the Github Checks API
   themes:
