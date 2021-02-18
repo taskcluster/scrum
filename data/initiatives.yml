@@ -137,11 +137,3 @@ automated-worker-image-builds:
     mozilla/community-tc-config, so that it is no longer necessary for humans
     to trigger machine builds manually, or modify machine image references in
     Worker Manager worker pool definitions.
-
-careers-website:
-  title: Bring careers website up to standards, into bedrock
-  themes:
-    - maintenance
-  description: >-
-    Address some long-standing issues with the careers website and work to
-    integrate it into the bedrock system so that it remains up-to-date.
